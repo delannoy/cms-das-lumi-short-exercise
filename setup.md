@@ -7,7 +7,6 @@ title: Setup
 
 > ## Important
 > **This exercise is meant to be run from lxplus.cern.ch.**
-> Please follow the [setup instructions](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html) before getting started.
 {: .callout}
 
 ## Set up brilconda3 (centrally-installed Python3 virtual environment):
@@ -29,6 +28,7 @@ Python 3.7.6
 The `--user` flag will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
 > ## Important!
 > It's always a good idea to include the `--upgrade` flag.
+> 
 > **If your brilcalc installation stops working, running the command below will fix it in 99% of cases.**
 {: .checklist}
 ```bash
