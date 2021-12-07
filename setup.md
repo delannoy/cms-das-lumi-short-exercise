@@ -6,7 +6,7 @@ title: Setup
 # Install the [BRIL Work Suite](https://cmslumi.web.cern.ch/#prerequisite)
 
 
-## Setup brilconda3 (python3 virtual environment):
+## Set up brilconda3 (centrally-installed python3 virtual environment):
 ```bash
 ssh lxplus
 [[ "${SHELL##*/}" != 'bash' ]] && bash # spawn a bash shell if not in a bash shell
@@ -21,31 +21,14 @@ Python 3.7.6
 ```
 {: .output}
 
-
-## Uninstall brilws if already installed
-```bash
-python3 -m pip uninstall -y brilws
-```
-{: .source}
-
-### If brilws is not installed:
-```
-WARNING: Skipping brilws as it is not installed.
-```
-{: .output}
-
-### If brilws is already installed:
-```
-Found existing installation: brilws 3.6.8
-Uninstalling brilws-3.6.8:
-  Successfully uninstalled brilws-3.6.8
-```
-{: .output}
-
-
 ## Install brilws
+The `--user` flag for `pip install` will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
+> ## Important!
+> It's always a good idea to include the `--upgrade` flag.
+> **If your brilcalc installation stops working, running the command below will fix it in 99% of cases.**
+{: .checklist}
 ```bash
-python3 -m pip install --user brilws # pip will install brilws binaries to "${HOME}/.local/bin/" and libraries to "${HOME}/.local/lib/"
+/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --upgrade brilws
 ```
 {: .source}
 ```
@@ -57,7 +40,7 @@ Successfully installed brilws-3.6.8
 
 ### Verify brilws pip info
 ```bash
-python3 -m pip show brilws
+/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip show brilws
 ```
 {: .source}
 ```
@@ -68,7 +51,7 @@ Home-page: https://github.com/xiezhen/brilws
 Author: Zhen Xie
 Author-email: UNKNOWN
 License: MIT
-Location: "${HOME}"/.local/lib/python3.7/site-packages
+Location: "${HOME}/.local/lib/python3.7/site-packages"
 Requires:
 Required-by:
 ```
@@ -80,7 +63,7 @@ command -v brilcalc
 ```
 {: .source}
 ```
-"${HOME}"/.local/bin/brilcalc
+"${HOME}/.local/bin/brilcalc"
 ```
 {: .output}
 
@@ -94,8 +77,8 @@ brilcalc --version
 ```
 {: .output}
 
-> ## python hints
-> Note that the brilconda3 virtual environment offers a faily recent version of python3 (3.7) and batteries are included (lots of third-party python packages)!
+> ## Bonus python hints!
+> Note that the brilconda3 virtual environment offers a faily recent version of python (3.7) and batteries are included (lots of third-party python packages)!
 > You might consider defining a `brilconda3` alias in your `~/.bashrc` to prepend brilconda3 to the `$PATH` environment variable:
 > ```bash
 > echo 'alias brilconda3="[[ -d /cvmfs/cms-bril.cern.ch/brilconda3 ]] && export PATH=/cvmfs/cms-bril.cern.ch/brilconda3/bin:${PATH}"' >> "${HOME}/.bashrc"
