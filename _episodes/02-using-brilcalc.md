@@ -19,8 +19,8 @@ keypoints:
 # brilcalc
 
 `brilcalc` is the official tool for querying CMS luminosity information.
-The official brilcalc documentation can be found here: [https://cmslumi.web.cern.ch/](https://cmslumi.web.cern.ch/).
 It currently has three subcommands: `lumi`, `beam`, and `trg`.
+The official brilcalc documentation can be found here: [https://cmslumi.web.cern.ch/](https://cmslumi.web.cern.ch/).
 
 ## brilcalc lumi
 
@@ -55,7 +55,7 @@ Let's try a few examples:
 > {: .output}
 {: .challenge}
 
-> ## `brilcalc lumi -f "${run}"`
+> ## `brilcalc lumi -r "${run}"`
 > ```bash
 > brilcalc lumi -r 325000
 > ```
@@ -75,4 +75,33 @@ Let's try a few examples:
 > +-------+------+-----+------+---------------------+--------------------+
 > ```
 > {: .output}
+{: .challenge}
+
+> ## Query luminosity info for fill corresponding to run `325000`
+> > ## Solution
+> > ```bash
+> > brilcalc lumi -f 7324
+> > ```
+> > {: .source}
+> > ```
+> > #Data tag : 19v3 , Norm tag: onlineresult
+> > +-------------+-------------------+-----+------+---------------------+---------------------+
+> > | run:fill    | time              | nls | ncms | delivered(/ub)      | recorded(/ub)       |
+> > +-------------+-------------------+-----+------+---------------------+---------------------+
+> > | 324993:7324 | 10/21/18 04:13:52 | 4   | 0    | 57.418615708        | 0                   |
+> > | 324997:7324 | 10/21/18 04:27:42 | 144 | 135  | 52975599.000250138  | 45212110.272690363  |
+> > | 324998:7324 | 10/21/18 05:23:15 | 371 | 362  | 124730512.764399797 | 114778149.184397712 |
+> > | 324999:7324 | 10/21/18 07:47:05 | 44  | 38   | 13126573.110420927  | 3909932.614611583   |
+> > | 325000:7324 | 10/21/18 08:03:56 | 376 | 371  | 100027429.112490401 | 95257794.416809484  |
+> > | 325001:7324 | 10/21/18 10:29:40 | 601 | 601  | 126213437.566453755 | 121487548.568495035 |
+> > +-------------+-------------------+-----+------+---------------------+---------------------+
+> > #Summary:
+> > +-------+------+------+------+---------------------+---------------------+
+> > | nfill | nrun | nls  | ncms | totdelivered(/ub)   | totrecorded(/ub)    |
+> > +-------+------+------+------+---------------------+---------------------+
+> > | 1     | 6    | 1540 | 1507 | 417073608.972630739 | 380645535.057004213 |
+> > +-------+------+------+------+---------------------+---------------------+
+> > ```
+> > {: .output}
+> {: .solution}
 {: .challenge}
