@@ -27,6 +27,7 @@ The official brilcalc documentation can be found here: [https://cmslumi.web.cern
 This lesson will focus on the `brilcalc lumi` subcommand, which can query the delivered and recorded CMS luminosity.
 Let's try a few examples:
 
+
 > ## `brilcalc lumi -f "${fill}"`
 > ```bash
 > brilcalc lumi -f 6666
@@ -55,6 +56,7 @@ Let's try a few examples:
 > {: .output}
 {: .challenge}
 
+
 > ## `brilcalc lumi -r "${run}"`
 > ```bash
 > brilcalc lumi -r 325000
@@ -77,9 +79,29 @@ Let's try a few examples:
 > {: .output}
 {: .challenge}
 
+
+> ## `brilcalc --output-style`
+> The stdout (display output) of `brilcalc` can be specified with the `--output-style` flag.
+> Note that this in a "common" or "global" option, meaning that it is also available for the `brilcalc beam` and `brilcalc trg` subcommands.
+> Let's reproduce the above output in csv format:
+> ```bash
+> brilcalc lumi -r 325000 --output-style csv
+> ```
+> {: .source}
+> ```
+> #Data tag : 19v3 , Norm tag: None
+> #run:fill,time,nls,ncms,delivered(/ub),recorded(/ub)
+> 325000:7324,10/21/18 08:03:56,376,371,100027429.112490401,95257794.416809484
+> #Summary:
+> #nfill,nrun,nls,ncms,totdelivered(/ub),totrecorded(/ub)
+> #1,1,376,371,100027429.112490401,95257794.416809484
+> ```
+> {: .output}
+{: .challenge}
+
 > ## Query luminosity info for fill corresponding to run 325000
 > > ## Solution
-> > ### Determine the fill number given a run number using overly-complicated `awk` syntax:
+> > Determine the fill number given a run number using overly-complicated `awk` syntax:
 > > ```bash
 > > fill="$(brilcalc lumi -r 325000 --output-style csv | awk 'BEGIN{FS="[,:]"}; /run:fill/{getline;print $2}')"
 > > echo "${fill}"
@@ -89,7 +111,7 @@ Let's try a few examples:
 > > 7324
 > > ```
 > > {: .output}
-> > ### Or, determine the fill number given a run number "by hand" using simpler `grep` syntax:
+> > Or, determine the fill number given a run number "by hand" using simpler `grep` syntax:
 > > ```bash
 > > brilcalc lumi -r 325000 --output-style csv | grep --after-context=1 'run:fill'
 > > fill=7324
@@ -100,7 +122,7 @@ Let's try a few examples:
 > > 325000:7324,10/21/18 08:03:56,376,371,100027429.112490401,95257794.416809484
 > > ```
 > > {: .output}
-> > ### Run the `brilcalc lumi` command for the corresponding fill (7324):
+> > Run the `brilcalc lumi` command for the fill (7324) corresponding to run 325000:
 > > ```bash
 > > brilcalc lumi -f "${fill}"
 > > ```
