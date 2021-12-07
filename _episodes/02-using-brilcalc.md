@@ -77,10 +77,32 @@ Let's try a few examples:
 > {: .output}
 {: .challenge}
 
-> ## Query luminosity info for fill corresponding to run `325000`
+> ## Query luminosity info for fill corresponding to run 325000
 > > ## Solution
+> > ### Determine the fill number given a run number using overly-complicated `awk` syntax:
 > > ```bash
-> > brilcalc lumi -f 7324
+> > fill="$(brilcalc lumi -r 325000 --output-style csv | awk 'BEGIN{FS="[,:]"}; /run:fill/{getline;print $2}')"
+> > echo "${fill}"
+> > ```
+> > {: .source}
+> > ```
+> > 7324
+> > ```
+> > {: .output}
+> > ### Or, determine the fill number given a run number "by hand" using simpler `grep` syntax:
+> > ```bash
+> > brilcalc lumi -r 325000 --output-style csv | grep --after-context=1 'run:fill'
+> > fill=7324
+> > ```
+> > {: .source}
+> > ```
+> > #run:fill,time,nls,ncms,delivered(/ub),recorded(/ub)
+> > 325000:7324,10/21/18 08:03:56,376,371,100027429.112490401,95257794.416809484
+> > ```
+> > {: .output}
+> > ### Run the `brilcalc lumi` command for the corresponding fill (7324):
+> > ```bash
+> > brilcalc lumi -f "${fill}"
 > > ```
 > > {: .source}
 > > ```
