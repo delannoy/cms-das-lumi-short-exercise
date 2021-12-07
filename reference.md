@@ -1,5 +1,6 @@
 ---
 layout: reference
+title: "References"
 ---
 
 ## More info:
@@ -17,7 +18,7 @@ layout: reference
 * [What is Luminosity (Symmetry Magazine)](https://www.symmetrymagazine.org/article/what-is-luminosity) (2021) (S.Charley)
 * [https://www.symmetrymagazine.org/article/what-is-luminosity](https://cms.cern/news/planning-years-luminosity-measurements-bril) (2020) (P.Lujan)
 
-### Further references:
+### Further references
 * [LHC Programme Coordination - Luminosity Calibration](https://lpc.web.cern.ch/lumicalib.htm)
 
 ## Glossary
