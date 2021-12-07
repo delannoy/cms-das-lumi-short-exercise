@@ -85,7 +85,7 @@ brilcalc --version
 > ~/.local/bin/brilcalc --version
 > ```
 > {: .source}
-> If this doesn't work, the "${HOME}/.local/" area may need to be cleaned up by hand:
+> If this doesn't work, the `"${HOME}/.local/"` area may need to be cleaned up by hand:
 > ```bash
 > rm -iv "${HOME}/.local/bin/bril"*
 > rm -rv "${HOME}/.local/lib/python3.7/site-packages/brilws"*
