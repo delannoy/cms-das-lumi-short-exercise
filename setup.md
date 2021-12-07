@@ -5,8 +5,12 @@ title: Setup
 
 # Installation of [BRIL Work Suite](https://cmslumi.web.cern.ch/#prerequisite) (brilws)
 
+> ## Important
+> **This exercise is meant to be run from lxplus.cern.ch.**
+> Please follow the [setup instructions](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html) before getting started.
+{: .callout}
 
-## Set up brilconda3 (centrally-installed python3 virtual environment):
+## Set up brilconda3 (centrally-installed Python3 virtual environment):
 ```bash
 ssh lxplus
 [[ "${SHELL##*/}" != 'bash' ]] && bash # spawn a bash shell if not in a bash shell
@@ -93,7 +97,7 @@ brilcalc --version
 > ~/.local/bin/brilcalc --version
 > ```
 > {: .source}
-> If thigs are still broken, a brilconda3-based virtual environment could be set up (see ["bonus python tips"](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html#bonus-python-hints) below):
+> If things are still broken, a "private" brilconda3-based virtual environment can be set up (see ["bonus Python tips"](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html#bonus-python-hints) below):
 > ```bash
 > /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m venv --system-site-packages "${HOME}/.local/brilconda3"
 > source "${HOME}/.local/brilconda3/bin/activate"
@@ -103,14 +107,15 @@ brilcalc --version
 > {: .source}
 {: .solution}
 
-> ## Bonus python hints!
-> Note that the brilconda3 virtual environment offers a faily recent version of python (3.7) and batteries are included (lots of third-party python packages)!
+> ## Bonus Python hints!
+> Note that the brilconda3 virtual environment offers a faily recent version of Python (3.7) and batteries are included (lots of third-party Python packages)!
 > You might consider defining a `brilconda3` alias in your `~/.bashrc` to prepend brilconda3 to the `$PATH` environment variable:
 > ```bash
 > echo 'alias brilconda3="[[ -d /cvmfs/cms-bril.cern.ch/brilconda3 ]] && export PATH=/cvmfs/cms-bril.cern.ch/brilconda3/bin:${PATH}"' >> "${HOME}/.bashrc"
 > ```
 > {: .source}
-> You might also find it useful to set up a brilconda3-based python3 virtual environment. The `--system-site-packages` flag gives your virtual environment access to the brilconda3 packages.
+> You might also find it useful to set up a brilconda3-based Python3 virtual environment (each virtual environment lives "portably" inside a directory; it includes its own Python binary and can have an independent set of Python packages).
+The `--system-site-packages` flag gives your virtual environment access to the brilconda3 packages.
 > ```bash
 > /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m venv --system-site-packages "${HOME}/.local/brilconda3"
 > source "${HOME}/.local/brilconda3/bin/activate"

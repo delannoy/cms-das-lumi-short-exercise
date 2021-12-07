@@ -20,6 +20,17 @@ keypoints:
 
 ## Luminosity and its importance
 
+In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
+Roughly speaking, it corresponds to the "rate of interactions/events/collisions".
+
+
+
+During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second.
+This yielded overall an average of 34 interaction per crossing.
+![Interactions per crossing (pileup) for 2015-2018](https://cmslumi.web.cern.ch/publicplots/pileup_allYears_run2.png){:width="50%"}
+
+
+
 The luminosity of a collider is the number of collisions per area (i.e. cross section) per time. The typical unit is $$ \mathrm{cm^{-2} s^{-1}} $$. This luminosity is sometimes referred to
 as the "instantaneous" luminosity $$ \mathcal{L}_{inst} $$. The "integrated" luminosity is the integral of the instantaneous luminosity over time:
 
