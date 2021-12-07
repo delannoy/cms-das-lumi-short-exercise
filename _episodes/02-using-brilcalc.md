@@ -12,5 +12,43 @@ keypoints:
 
 > ## Important
 > **This exercise is meant to be run from lxplus.cern.ch.**
+>
 > Please follow the [setup instructions](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html) before getting started.
-{: .checklist}
+{: .prereq}
+
+# brilcalc
+
+`brilcalc` is the official tool for querying CMS luminosity information.
+The official brilcalc documentation can be found here: [https://cmslumi.web.cern.ch/](https://cmslumi.web.cern.ch/).
+It currently has three subcommands: `lumi`, `beam`, and `trg`.
+
+## brilcalc lumi
+
+This lesson will focus on the `brilcalc lumi` subcommand, which can query the delivered and recorded CMS luminosity.
+Let's try a few examples:
+
+> ##
+> ```bash
+> brilcalc lumi -f 6666
+> ```{: .source}
+> ```
+> #Data tag : 19v3 , Norm tag: onlineresult
+> +-------------+-------------------+------+------+---------------------+---------------------+
+> | run:fill    | time              | nls  | ncms | delivered(/ub)      | recorded(/ub)       |
+> +-------------+-------------------+------+------+---------------------+---------------------+
+> | 316108:6666 | 05/10/18 20:54:10 | 20   | 7    | 405.423497145       | 107.184508306       |
+> | 316109:6666 | 05/10/18 21:01:36 | 54   | 45   | 10039605.429211318  | 3542879.861587470   |
+> | 316110:6666 | 05/10/18 21:22:27 | 217  | 210  | 84147739.992830962  | 79017103.630366772  |
+> | 316111:6666 | 05/10/18 22:46:45 | 59   | 48   | 20773266.833208650  | 14573457.533706700  |
+> | 316112:6666 | 05/10/18 23:09:31 | 19   | 10   | 6499507.705982770   | 228.928666450       |
+> | 316113:6666 | 05/10/18 23:16:41 | 68   | 64   | 22720996.040678266  | 19663097.809963763  |
+> | 316114:6666 | 05/10/18 23:42:59 | 1647 | 1647 | 371661976.624663532 | 362106384.976257861 |
+> +-------------+-------------------+------+------+---------------------+---------------------+
+> #Summary:
+> +-------+------+------+------+---------------------+---------------------+
+> | nfill | nrun | nls  | ncms | totdelivered(/ub)   | totrecorded(/ub)    |
+> +-------+------+------+------+---------------------+---------------------+
+> | 1     | 7    | 2084 | 2031 | 515843498.050072670 | 478903259.925057292 |
+> +-------+------+------+------+---------------------+---------------------+
+> ```{: .output}
+{: .challenge}
