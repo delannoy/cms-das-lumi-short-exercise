@@ -3,7 +3,7 @@ title: Setup
 ---
 
 
-# Install the [BRIL Work Suite](https://cmslumi.web.cern.ch/#prerequisite)
+# Installation of [BRIL Work Suite](https://cmslumi.web.cern.ch/#prerequisite) (brilws)
 
 
 ## Set up brilconda3 (centrally-installed python3 virtual environment):
@@ -22,7 +22,7 @@ Python 3.7.6
 {: .output}
 
 ## Install brilws
-The `--user` flag for `pip install` will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
+The `--user` flag will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
 > ## Important!
 > It's always a good idea to include the `--upgrade` flag.
 > **If your brilcalc installation stops working, running the command below will fix it in 99% of cases.**
@@ -76,6 +76,32 @@ brilcalc --version
 3.6.8
 ```
 {: .output}
+
+> ## Troubleshooting brilws and brilcalc
+> In case of trouble, brilws can be uninstalled and reinstalled:
+> ```bash
+> /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip uninstall -y brilws
+> /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --upgrade brilws
+> ~/.local/bin/brilcalc --version
+> ```
+> {: .source}
+> If this doesn't work, the "${HOME}/.local/" area may need to be cleaned up by hand:
+> ```bash
+> rm -iv "${HOME}/.local/bin/bril"*
+> rm -rv "${HOME}/.local/lib/python3.7/site-packages/brilws"*
+> /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --upgrade brilws
+> ~/.local/bin/brilcalc --version
+> ```
+> {: .source}
+> If thigs are still broken, a brilconda3-based virtual environment could be set up (see ["bonus python tips"](https://delannoy.github.io/cms-das-lumi-short-exercise/setup.html#bonus-python-hints) below):
+> ```bash
+> /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m venv --system-site-packages "${HOME}/.local/brilconda3"
+> source "${HOME}/.local/brilconda3/bin/activate"
+> python3 -m pip install --upgrade brilws
+> ~/.local/brilconda3/bin/brilcalc --version
+> ```
+> {: .source}
+{: .solution}
 
 > ## Bonus python hints!
 > Note that the brilconda3 virtual environment offers a faily recent version of python (3.7) and batteries are included (lots of third-party python packages)!
