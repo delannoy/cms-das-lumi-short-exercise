@@ -27,10 +27,11 @@ It currently has three subcommands: `lumi`, `beam`, and `trg`.
 This lesson will focus on the `brilcalc lumi` subcommand, which can query the delivered and recorded CMS luminosity.
 Let's try a few examples:
 
-> ##
+> ## `brilcalc lumi -f "${fill}"`
 > ```bash
 > brilcalc lumi -f 6666
-> ```{: .source}
+> ```
+> {: .source}
 > ```
 > #Data tag : 19v3 , Norm tag: onlineresult
 > +-------------+-------------------+------+------+---------------------+---------------------+
@@ -50,5 +51,6 @@ Let's try a few examples:
 > +-------+------+------+------+---------------------+---------------------+
 > | 1     | 7    | 2084 | 2031 | 515843498.050072670 | 478903259.925057292 |
 > +-------+------+------+------+---------------------+---------------------+
-> ```{: .output}
+> ```
+> {: .output}
 {: .challenge}
