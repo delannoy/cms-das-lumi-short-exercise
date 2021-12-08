@@ -93,16 +93,15 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 
 > ## `brilcalc` common command option categories
 > Selections
-> 
 > : select period to query (fill, run, start & end timestamps, etc.)
+> 
 > Filters
-> 
 > : filter conditions to query (stable beams, proton physics, etc.)
+> 
 > Output/Display
-> 
 > : specify output file, table/csv/html output format, utc/local time, etc.
-> Database connection
 > 
+> Database connection
 > : connect to a database, such as a web cache
 {: .callout}
 
