@@ -126,10 +126,10 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 > `--byls`
 > : Show luminosity and average pileup by lumi section
 >
-> `-u`
-> : Show luminosity in the specified unit and scale the output value accordingly
+> `-u <unit>` ["/kb","/b","/mb","/ub","/nb","/fb","/ab"] "1e[21,24,27,30,33,36,39,42]/cm2"
+> : Show luminosity in the specified unit and scale the output value accordingly 
 > 
-> `--type `
+> `--type <luminometer>` ["hfoc", "hfet", "bcm1f", "bcm1fsi", "bcm1futca", "pltzero", "pltslink", "dt", "pxl", "ramses", "radmon"]
 > : Show results from the selected luminometer
 {: .callout}
 
