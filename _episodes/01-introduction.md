@@ -124,13 +124,13 @@ Hadronic Forward (HF)
 
 ## Luminosity Calibration
 
-The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions, precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
+The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions and precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
 "Relative" luminosity can be determined on arbitrary scale by measuring the event rate.
 The determination of "absolute" luminosity involes re-scaling the measured event rate by a proportionality factor, $$ \sigma_{vis} $$, derived from the properties of the colliding beams.
 
 At the LHC, the primary technique to determine the absolute luminosity scale is the van der Meer (vdM) scan method, based on dedicated beam-separation scans.
 The size and shape of the interaction region is measured by recording the relative interaction rates as a function of the transverse beam separation.
-After adopting several assumptions (e.g. the transverse and longitudinal beam densities are Gaussian, linear x–y coupling is small enough to be neglected), the visible cross-section can be expressed as
+After adopting several assumptions (e.g. transverse and longitudinal beam densities are Gaussian, density functions are factorizable into $$x-$$ and $$y-$$dependent components, etc.), the visible cross-section can be expressed as
 
 $$ \sigma_{vis} = \mu_{vis}^{\mathrm{max}} \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$
 
@@ -138,6 +138,26 @@ where $$ \mu_{vis} $$ is the peak visible interaction rate,
 $$ n_{1} $$ and $$ n_{2} $$ are the numbers of particles in each of the two bunches,
 and $$ \Sigma_{x} $$ and $$ \Sigma_{y} $$ correspond to the effective beam overlap widths in each scan plane.
 
+### Corrections to vdM scan data
+
+Several systematic effects can affect the measurement of $$ \sigma_{vis} $$.
+These represent a significant contribution to the final uncertainty in the measurement of integrated luminosity.
+
+Orbit drift corrections
+: Potential bias from beam positions monitors (DOROS, Arc BPM) at the $$ \mu \mathrm{m} $$ scale
+
+Beam-beam effects
+: EM interaction between colliding bunches (deflection & shape)
+
+Length scale calibration
+: Possible differences in the absolute scale between the nominal beam separation (produced by the steering of the LHC magnets) and the actual separation
+
+Transverse factorizability
+: Non-factorizability of $$x$$ and $$y$$ components measured and corrected with the beam-image method
+: Beam-imaging method: the distributions of reconstructed vertices during beam-imaging scans are used to obtain an image of the transverse bunch profiles integrated over the scanning direction
+
+Other corrections
+: "Spurious" charges present outside the nominally filled bunches (ghosts👻 in empty bunch slots and out-of-time satellites🛰 charges adjacent to the main bunch)
 
 <!--
 
