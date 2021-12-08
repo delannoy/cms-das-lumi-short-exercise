@@ -91,18 +91,35 @@ Let's try a few examples:
 You can get a summary by running `brilcalc lumi --help`.
 But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much more comprehensive.
 
-> ## `brilcalc` common command option categories
+> ## Example `brilcalc` common command options
 > Selections
-> : select period to query (fill, run, start & end timestamps, etc.)
+> : select period to query
+> 
+> * `-f <fill>`
+> * `-r <run>`
+> * `--begin <MM/DD/YY HH:MM:SS>` (UTC)
+> * `--end <MM/DD/YY HH:MM:SS>` (UTC)
 > 
 > Filters
-> : filter conditions to query (stable beams, proton physics, etc.)
+> : filter conditions to query
+> 
+> * `-b <beam status>` ["STABLE BEAMS", "FLAT TOP", "ADJUST", "SQUEEZE"]
+> * `--amodetag <machine mode>` ["PROTPHYS", "IONPHYS", "PAPHYS"]
+> * `--beamenergy <beam energy>` (in GeV)
 > 
 > Output/Display
 > : specify output file, table/csv/html output format, utc/local time, etc.
 > 
+> * `-o <output file>` (csv format)
+> * `--output-style <output format>` ["tab", "csv", "html"] (ignored if `-o` is provided)
+> * `-n <scalefactor>` (scale output by 1/scalefactor)
+> * `--cerntime` (display times in CERN local time)
+> * `--tssec` (display times as UNIX timestamps)
+> 
 > Database connection
 > : connect to a database, such as a web cache
+>
+> * `-c <connection>` ["offline", "online", "onlinew", "dev"]
 {: .callout}
 
 > ## Example `brilcalc lumi` options
