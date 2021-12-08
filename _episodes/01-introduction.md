@@ -39,7 +39,10 @@ As an example, let's *very approximately* calculate the total Higgs Boson produc
 > * During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ $$ \left( 0.02 \mathrm{pb^{-1} s^{-1}} \right) $$ at CMS
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >
-> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst}^{\mathrm{peak}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 0.02 \mathrm{pb^{-1} s^{-1}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
+> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst}^{\mathrm{peak}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$\
+> > ## Solution
+> > $$ \approx 0.02 \mathrm{pb^{-1} s^{-1}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
+> {: .solution}
 {: .challenge}
 
 ## Integrated Luminosity
@@ -56,7 +59,10 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 > * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >
-> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
+> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$\
+> > ## Solution
+> > $$ \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
+> {: .solution}
 {: .challenge}
 
 ## Importance of Luminosity
@@ -76,8 +82,8 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > 
 > By how much would the expected event yield change if one considers the maximum and minimum values of integrated luminosity within its uncertainty?
 >
+> $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \left( \mathcal{L}_{int}^{2018} \pm \delta \right) \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$\
 > > ## Solution
-> > $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \left( \mathcal{L}_{int}^{2018} \pm \delta \right) \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$ \
 > > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
 > > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
 > {: .solution}
