@@ -59,7 +59,7 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 >> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
 {: .challenge}
 
-## Imporance of Luminosity
+## Importance of Luminosity
 
 Along with the center of mass energy, instantanous luminosity is the most significant performance parameter for any particle accelerator.
 Real-time monitoring of instantaneous luminosity is critical for the acclerator to carry out beam tuning and collision optimization.
@@ -67,7 +67,7 @@ It is also essential for the CMS trigger system in order to scale or throttle th
 
 Measurement of integrated luminosity is also incredibly crucial since its limited precision represents a contribution to the systematic uncertainty for most physics searches and measurements.
 The uncertainty in the integrated luminosity is often the dominant systematic uncertainty in cross-section measurements.
-We can emphasize the impact of the integrated luminosity uncertainty by considering a rare process:
+We can emphasize the impact of the integrated luminosity uncertainty by considering a relatively rare process:
 
 >> ## Total Higgs bosons decaying to muon pais at CMS during 2018
 >> * During 2018, CMS recorded around $$ \approx 60 \pm 2.5 \mathrm{fb^{-1}} $$ of good-quality data (see the [CMS Lumi POG "quick summary table"](\mathrm{fb^{-1}}))
@@ -76,9 +76,11 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 >> 
 >> By how much would the expected event yield change if one considers the maximum and minimum values of integrated luminosity within its uncertainty?
 >>
->> $$ \mathrm{N}_{H \rightarrow \mu\mu}^{2018} = \mathcal{L}_{int}^{2018} \pm \delta \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu\mu} $$ \
->> $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
->> $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
+>> >> ## Solution
+>> >> $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \mathcal{L}_{int}^{2018} \pm \delta \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$ \
+>> >> $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
+>> >> $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
+>> {: .solution}
 {: .challenge}
 
 ## Luminosity Measurement
