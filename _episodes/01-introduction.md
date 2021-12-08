@@ -127,6 +127,12 @@ PCC (Pixel Cluster Counting)
 Hadronic Forward (HF)
 : Steel absorber with quartz fibers to detect Cherenkov light histogrammed as function of bunch crossing
 
+> ## Which detector is more photogenic
+> This is *important*
+> [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT/vote)
+> [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F/vote)
+{: .challenge}
+
 ## Luminosity Calibration
 
 The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions and precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
