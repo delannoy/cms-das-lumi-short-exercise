@@ -58,6 +58,8 @@ It is commonly used to quantify the "amount of data" delivered by the accelerato
 Units of inverse femtobars $$ \mathrm{fb^{-1}} $$ are frequently used in CMS.
 To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
 
+![Cumulative delivered and recorded luminosity versus time for 2015-2018 (pp data only)](https://cmslumi.web.cern.ch/publicplots/int_lumi_animated_4x_pp_run2.gif){:width="50%"}
+
 > ## 1.2 Total Higgs bosons produced at CMS during 24 hours
 > * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
