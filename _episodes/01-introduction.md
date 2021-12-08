@@ -86,11 +86,9 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 >
 > $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \left( \mathcal{L}_{int}^{2018} \pm \delta \right) \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$
 > 
-> > ## Solution
-> > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D/vote)
-> > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D/vote)
-> > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D/vote)
-> {: .solution}
+> [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D/vote)
+> [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D/vote)
+> [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D/vote)
 {: .challenge}
 
 <!--
