@@ -25,7 +25,7 @@ It is important to always use the latest normtag in order to get the best result
 
 > ## Important
 > **Never run `brilcalc` without a `--normtag` argument unless you know exactly what you are doing.**\
-> Running brilcalc without --normtag will give you the online luminosity, which can change significantly by improvements in calibration.
+> Running brilcalc without `--normtag` will give you the online luminosity, which can change significantly by improvements in calibration.
 > It is neither accurate, nor precise, nor stable.
 {: .callout}
 
