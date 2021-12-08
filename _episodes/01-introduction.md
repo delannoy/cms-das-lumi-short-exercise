@@ -93,6 +93,7 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D/vote)
+> 
 <!--
 > > ## Solution
 > > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
