@@ -37,7 +37,7 @@ Run
 : Sub-section of a fill, increments each time the CMS central DAQ initates data taking
 
 Lumi section
-: Sub-section of a run, defined as $$ 2 \times 10^{18} \cdot \mathrm{orbits_{LHC}} = 2 \times 10^{18} \cdot \frac{\mathrm{N_{bunches}}}{\mathcal{f}_{\mathrm{crossing}}} = 2 \times 10^{18} \cdot \frac{3564}{40 \times 10^{6} Hz} \approx 23.3570304 \mathrm{s} $$
+: Sub-section of a run, defined as $$ 2 \times 10^{18} \cdot \mathrm{orbits_{LHC}} = 2 \times 10^{18} \cdot \frac{\mathrm{N_{bunches}}}{\mathcal{f}_{\mathrm{crossing}}} = 2 \times 10^{18} \cdot \frac{3564}{40 \times 10^{6} \mathrm{Hz}} \approx 23.3570304 \mathrm{s} $$
 
 Lumi nibble
 : Sub-section of a lumi section, defined as $$ 2 \times 10^{12} \cdot \mathrm{orbits_{LHC}} \approx 0.3649536 \mathrm{s} $$
