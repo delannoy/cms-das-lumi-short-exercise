@@ -157,7 +157,29 @@ Transverse factorizability
 : Beam-imaging method: the distributions of reconstructed vertices during beam-imaging scans are used to obtain an image of the transverse bunch profiles integrated over the scanning direction
 
 Other corrections
-: "Spurious" charges present outside the nominally filled bunches (ghosts👻 in empty bunch slots and out-of-time satellites🛰 charges adjacent to the main bunch)
+: "Spurious" charges present outside the nominally filled bunches (ghosts👻 in empty bunch slots and out-of-time satellite🛰 charges adjacent to the main bunch)
+
+> ## Dominant uncertainties in the absolute luminosity scale ($$ \sigma_{vis} $$):
+> * beam position monitoring
+> * transverse factorizability
+> * beam-beam effects
+{: .callout}
+
+### Rate corrections under physics running conditions
+
+Several corrections must be applied to uncalibrated luminometer rates to ensure that the final luminosity values are accurate.
+
+Out-of-time pileup corrections
+: Most detectors have out-of-time contributions that do not arise from the main colliding bunch (spillover of electronic signals and real additional response from material activation)
+
+Efficiency corrections
+: Radiation damage can affect the detector response by reducing efficiency, increasing noise, or both
+
+Nonlinear response
+: Over- or under-counting as a function of instantaneous luminosity
+
+Detector stability and linearity
+: Determined from comparisons between luminometers
 
 <!--
 
