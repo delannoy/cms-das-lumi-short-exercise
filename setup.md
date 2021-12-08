@@ -28,7 +28,7 @@ Python 3.7.6
 ## Install brilws
 The `--user` flag will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
 > ## Important!
-> It's always a good idea to include the `--upgrade` flag.\ 
+> It's always a good idea to include the `--upgrade` flag.\
 > **If your brilcalc installation stops working, running the command below will fix it in 99% of cases.**
 {: .checklist}
 ```bash
