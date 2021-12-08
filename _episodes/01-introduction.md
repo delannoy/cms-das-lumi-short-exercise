@@ -21,7 +21,7 @@ keypoints:
 ## Instantanous Luminosity
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
-Roughly speaking, it corresponds to the "rate of interactions/events/collisions".
+Roughly speaking, it corresponds to the "real-time rate of interactions/events/collisions".
 During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second yielding an overall average of 34 interactions per crossing within the CMS detector.
 
 ![Interactions per crossing (pileup) for 2015-2018](https://cmslumi.web.cern.ch/publicplots/pileup_allYears_run2.png){:width="50%"}
@@ -44,7 +44,7 @@ As an example, let's *very approximately* calculate the total Higgs Boson produc
 
 ## Integrated Luminosity
 
-Instantaneous luminosity aggregated over a certain period of time to obtain integrated luminosity:
+Instantaneous luminosity is aggregated over a certain period of time to obtain integrated luminosity:
 
 $$ \mathcal{L}_{int} = \int \mathcal{L}_{inst} dt $$
 
@@ -65,8 +65,24 @@ Along with the center of mass energy, instantanous luminosity is the most signif
 Real-time monitoring of instantaneous luminosity is critical for the acclerator to carry out beam tuning and collision optimization.
 It is also essential for the CMS trigger system in order to scale or throttle the data throughput.
 
+Measurement of integrated luminosity is also incredibly crucial since its limited precision represents a contribution to the systematic uncertainty for most physics searches and measurements.
+The uncertainty in the integrated luminosity is often the dominant systematic uncertainty in cross-section measurements.
+We can emphasize the impact of the integrated luminosity uncertainty by considering a rare process:
 
+>> ## Total Higgs bosons decaying to muon pais at CMS during 2018
+>> * During 2018, CMS recorded around $$ \approx 60 \pm 2.5 \mathrm{fb^{-1}} $$ of good-quality data (see the [CMS Lumi POG "quick summary table"](\mathrm{fb^{-1}}))
+>> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+>> * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+>> By how much would the expected event yield change if one considers the maximum and minimum values of integrated luminosity within its uncertainty?
+>>
+>> $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \mathcal{L}_{int}^{2018} \pm \delta \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$ 
+>> $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$
+>> $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
+{: .challenge}
 
+## Luminosity Measurement
+
+The precise determination of integrated luminosity is particularly challenging at hadron colliders.
 
 
 {% comment %}
