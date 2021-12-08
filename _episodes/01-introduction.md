@@ -132,7 +132,7 @@ At the LHC, the primary technique to determine the absolute luminosity scale is 
 The size and shape of the interaction region is measured by recording the relative interaction rates as a function of the transverse beam separation.
 After adopting several assumptions (e.g. the transverse and longitudinal beam densities are Gaussian, linear x–y coupling is small enough to be neglected), the visible cross-section can be expressed as
 
-$$ \sigma_{vis} = \mu_{vis}^{mathrm{max}} \cdot \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$,
+$$ \sigma_{vis} = \mu_{vis}^{\mathrm{max}} \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$
 
 where $$ \mu_{vis} $$ is the peak visible interaction rate,
 $$ n_{1} $$ and $$ n_{2} $$ are the numbers of particles in each of the two bunches,
