@@ -116,7 +116,10 @@ Pixel Luminosity Telescope (PLT)
 : 16 "telescopes" (8 per side of CMS) with three hybrid silicon pixel sensors per telescope
 : Fast cluster-counting signal (40 MHz) in addition to full pixel info readout
 
+![Pixel Luminosity Telescope](https://cds.cern.ch/record/2777045/files/2021-06-29%2011.19.34.jpg?subformat=icon-1440){:width="50%"}
+
 In addition, several sub-detectors are used for luminosity measurement, among them:
+![BCM1F C-shape](https://cds.cern.ch/record/2765247/files/2021-05-20%2015.19.28.jpg?subformat=icon-1440){:width="50%"}
 
 PCC (Pixel Cluster Counting)
 : Counts the mean number of pixel clusters in the most "stable" modules of the silicon pixel detector
