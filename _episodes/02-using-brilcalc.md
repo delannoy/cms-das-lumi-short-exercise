@@ -91,15 +91,31 @@ Let's try a few examples:
 You can get a summary by running `brilcalc lumi --help`.
 But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much more comprehensive.
 
-> ## brilcalc common command options
+> ## `brilcalc` common command option categories
 > Selections
+> 
 > : select period to query (fill, run, start & end timestamps, etc.)
 > Filters
+> 
 > : filter conditions to query (stable beams, proton physics, etc.)
 > Output/Display
+> 
 > : specify output file, table/csv/html output format, utc/local time, etc.
 > Database connection
+> 
 > : connect to a database, such as a web cache
+{: .callout}
+
+> ## Example `brilcalc lumi` options
+> `--byls`
+> : Show luminosity and average pileup by lumi section
+>
+> `-u`
+> : Show luminosity in the specified unit and scale the output value accordingly
+> 
+> `--type `
+> : Show results from the selected luminometer
+{: .callout}
 
 
 > ## `brilcalc --output-style`
