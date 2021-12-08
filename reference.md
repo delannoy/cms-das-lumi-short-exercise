@@ -5,16 +5,16 @@ title: "References"
 
 ## More info:
 
+### `brilcalc`
+* [BRIL Work Suite - `brilcalc` official documentation](https://cmslumi.web.cern.ch/)
+* [`brilcalc` Quick Start](https://twiki.cern.ch/twiki/bin/viewauth/CMS/BrilcalcQuickStart)
+
 ### Articles
 * [The Installation of the BRIL Luminometers: Preparing for a bright Run 3](https://cms.cern/news/installation-bril-luminometers-preparing-bright-run-3) (2021) (A.Delannoy)
 * [Illuminating! Counting LHC Collisions with CMS](https://cms.cern/news/illuminating-counting-lhc-collisions-cms) (2021) (G.Krintiras)
 * [Why precision luminosity measurements matter](https://home.cern/news/news/physics/why-precision-luminosity-measurements-matter) (2021) (P.Traczyk)
 * [What is Luminosity (Symmetry Magazine)](https://www.symmetrymagazine.org/article/what-is-luminosity) (2021) (S.Charley)
 * [https://www.symmetrymagazine.org/article/what-is-luminosity](https://cms.cern/news/planning-years-luminosity-measurements-bril) (2020) (P.Lujan)
-
-### `brilcalc`
-* [BRIL Work Suite - `brilcalc` official documentation](https://cmslumi.web.cern.ch/)
-* [`brilcalc` Quick Start](https://twiki.cern.ch/twiki/bin/viewauth/CMS/BrilcalcQuickStart)
 
 ### Papers
 * [Precision luminosity measurement in proton-proton collisions at s√= 13 TeV in 2015 and 2016 at CMS](https://arxiv.org/pdf/2104.01927) (2021) (CMS Collaboration)
@@ -29,9 +29,16 @@ title: "References"
 
 ## Glossary
 
-* Fill: Increments once the LHC injects proton bunches into the LHC (see here for more details about the injection chain: [CERN Control Centre "From the LINAC to the LHC" (2014)](https://videos.cern.ch/record/1750702))
-* Run: Sub-section of a fill, increments each time the CMS central DAQ initates data taking
-* Lumi section: Sub-section of a run, defined as $$ 2 \times 10^{18} \mathrm{LHC orbits} = 2 \times 10^{18} \frac{\mathrm{N_{bunches}}}{\mathcal{f}_{\mathrm{crossing}}} = 2 \times 10^{18} \cdot \frac{3564}{40 \times 10^{6} Hz} \approx 23.3570304 \mathrm{s} $$
-* Nibble: Sub-section of a lumi section, defined as $$ 2 \times 10^{12} \mathrm{LHC orbits} = \approx 0.3649536 \mathrm{s} $$
+Fill
+: Increments once the LHC injects proton bunches into the LHC (see here for more details about the injection chain: [CERN Control Centre "From the LINAC to the LHC" (2014)](https://videos.cern.ch/record/1750702))
+
+Run
+: Sub-section of a fill, increments each time the CMS central DAQ initates data taking
+
+Lumi section
+: Sub-section of a run, defined as $$ 2 \times 10^{18} \cdot \mathrm{LHC orbits} = 2 \times 10^{18} \frac{\mathrm{N_{bunches}}}{\mathcal{f}_{\mathrm{crossing}}} = 2 \times 10^{18} \cdot \frac{3564}{40 \times 10^{6} Hz} \approx 23.3570304 \mathrm{s} $$
+
+Nibble
+: Sub-section of a lumi section, defined as $$ 2 \times 10^{12} \cdot \mathrm{LHC orbits} \approx 0.3649536 \mathrm{s} $$
 
 {% include links.md %}
