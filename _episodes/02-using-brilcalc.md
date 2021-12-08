@@ -27,6 +27,9 @@ The official brilcalc documentation can be found here: [https://cmslumi.web.cern
 This lesson will focus on the `brilcalc lumi` subcommand, which can query the delivered and recorded CMS luminosity.
 Let's try a few examples:
 
+> ## Glossary
+> If you are unfamiliar with "fills", "runs", "lumisections", etc, you can find their definitions in the [Glossary](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html#glossary)
+{: .callout}
 
 > ## `brilcalc lumi -f "${fill}"`
 > ```bash
