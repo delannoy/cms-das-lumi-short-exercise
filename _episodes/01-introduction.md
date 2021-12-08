@@ -30,17 +30,17 @@ This yielded overall an average of 34 interaction per crossing within the CMS de
 More precisely, instantaneous luminosity quantifies the ability of particle accelerator to produce a certain number of interactions.
 It represents a proportionality factor between rate of interactions ($$ \frac{dN}{dt} $$) and the cross-section ($$ \sigma $$):
 
-$$ \frac{d\mathrm{N}}{dt} = \mathcal{L}_{inst} \dot \sigma $$
+$$ \frac{d\mathrm{N}}{dt} = \mathcal{L}_{inst} \cdot \sigma $$
 
 Thus, instantaneous luminosity is usually expressed in the cgs units of $$ \mathrm{cm^{-2} s^{-1}} $$.
-Units of "barns" are also used frequently, thanks to [two Purdue University physicists working on the Manhattan Project in 1942](https://www.symmetrymagazine.org/article/february-2006/hitting-the-broad-side-of-a-classified-barn), where $$ 1 b = \mathrm{cm^{-24} $$
+Units of "barns" are also used frequently, thanks to [two Purdue University physicists working on the Manhattan Project in 1942](https://www.symmetrymagazine.org/article/february-2006/hitting-the-broad-side-of-a-classified-barn), where $$ 1 b = \mathrm{cm^{-24}} $$
 For example, let's *very roughly* calculate the total Higgs Boson production rate at CMS:
 
 >> ## Total Higgs boson production rate at CMS during 2018
 >> During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ ($$ 0.02 \frac{\mathrm{pb}}{\mathrm{s}} $$) at CMS.\
 >> The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be somewhat underestimated to be $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))\
 >> Thus, we *very approximately* get:\
->> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst} \dot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
+>> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
 {: .challenge}
 
 {% comment %}
