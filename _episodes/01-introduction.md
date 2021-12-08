@@ -22,15 +22,28 @@ keypoints:
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
 Roughly speaking, it corresponds to the "rate of interactions/events/collisions".
-
-
-
 During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second.
-This yielded overall an average of 34 interaction per crossing.
+This yielded overall an average of 34 interaction per crossing within the CMS detector.
+
 ![Interactions per crossing (pileup) for 2015-2018](https://cmslumi.web.cern.ch/publicplots/pileup_allYears_run2.png){:width="50%"}
 
+More precisely, instantaneous luminosity quantifies the ability of particle accelerator to produce a certain number of interactions.
+It represents a proportionality factor between rate of interactions ($$ \frac{dN}{dt} $$) and the cross-section ($$ \sigma $$):
 
+$$ \frac{d\mathrm{N}}{dt} = \mathcal{L}_{inst} \sigma $$
 
+Thus, instantaneous luminosity is usually expressed in the cgs units of $$ \mathrm{cm^{-2} s^{-1}} $$.
+Units of "barns" are also used frequently, thanks to [two Purdue University physicists working on the Manhattan Project in 1942](https://www.symmetrymagazine.org/article/february-2006/hitting-the-broad-side-of-a-classified-barn), where $$ 1 b = \mathrm{cm^{-24} $$
+For example, let's *very roughly* calculate the total Higgs Boson production rate at CMS:
+
+>> ## Total Higgs boson production rate at CMS during 2018
+>> During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ ($$ 0.02 \frac{\mathrm{pb}}{\mathrm{s}} $$) at CMS.\
+>> The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be somewhat underestimated to be $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+>> Thus, we *very approximately* get:
+>> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst} \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \times 50 \mathrm{pb} \aprox 1 \mathrm{Hz} $$
+{: .challenge}
+
+{% comment %}
 The luminosity of a collider is the number of collisions per area (i.e. cross section) per time. The typical unit is $$ \mathrm{cm^{-2} s^{-1}} $$. This luminosity is sometimes referred to
 as the "instantaneous" luminosity $$ \mathcal{L}_{inst} $$. The "integrated" luminosity is the integral of the instantaneous luminosity over time:
 
@@ -59,6 +72,8 @@ A VdM scan is a special beam condition but this value of $$ \sigma_{vis} $$ stil
 
 In practice the performance of the luminometers can degrade over time due to effects such as radiation damage. CMS is capable of conducting fast luminosity scans with small beam separation, so-called "emmittance scans". These scans, performed similarly to VdM scans,
 can take just a few minutes and are typically performed at the beginning and at the end of a fill.
+
+{% endcomment %}
 
 {% include links.md %}
 
