@@ -134,7 +134,7 @@ After adopting several assumptions (e.g. transverse and longitudinal beam densit
 
 $$ \sigma_{vis} = \mu_{vis}^{\mathrm{max}} \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$
 
-where $$ \mu_{vis} $$ is the peak visible interaction rate,
+where $$ \mu_{vis}^{\mathrm{max}} $$ is the peak visible interaction rate,
 $$ n_{1} $$ and $$ n_{2} $$ are the numbers of particles in each of the two bunches,
 and $$ \Sigma_{x} $$ and $$ \Sigma_{y} $$ correspond to the effective beam overlap widths in each scan plane.
 
@@ -159,7 +159,7 @@ Transverse factorizability
 Other corrections
 : "Spurious" charges present outside the nominally filled bunches (ghosts👻 in empty bunch slots and out-of-time satellite🛰 charges adjacent to the main bunch)
 
-> ## Dominant uncertainties in the absolute luminosity scale ($$ \sigma_{vis} $$):
+> ## Dominant uncertainties in the absolute luminosity scale ($$ \sigma_{vis} $$)
 > * beam position monitoring
 > * transverse factorizability
 > * beam-beam effects
