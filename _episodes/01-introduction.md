@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 10
+teaching: 20
 exercises: 0
 questions:
 - "What is luminosity?"
@@ -18,7 +18,7 @@ keypoints:
 - "Measurement of luminosity is done with several systems in the detector."
 ---
 
-## Luminosity and its importance
+## Instantanous Luminosity
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
 Roughly speaking, it corresponds to the "rate of interactions/events/collisions".
@@ -36,12 +36,33 @@ Thus, instantaneous luminosity is usually expressed in the cgs units of $$ \math
 Units of "barns" are also used frequently, where $$ 1 \mathrm{b} = \mathrm{cm^{-24}} $$, thanks to [two Purdue University physicists working on the Manhattan Project in 1942](https://www.symmetrymagazine.org/article/february-2006/hitting-the-broad-side-of-a-classified-barn).
 As an example, let's *very approximately* calculate the total Higgs Boson production rate at CMS:
 
->> ## Total Higgs boson production rate at CMS during 2018
->> * During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ $$ \left( 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \right) $$ at CMS.
+>> ## Total Higgs boson production rate at CMS
+>> * During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ $$ \left( 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \right) $$ at CMS
 >> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >>
 >> $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst}^{\mathrm{peak}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 0.02 \frac{\mathrm{pb}}{\mathrm{s}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
 {: .challenge}
+
+## Integrated Luminosity
+
+Instantaneous luminosity aggregated over a certain period of time to obtain integrated luminosity:
+
+$$ \mathcal{L}_{int} = \int \mathcal{L}_{inst} dt $$
+
+It is commonly used to quantify the "amount of data" delivered by the accelerator or recorded by the experiment.
+Units of inverse femtobars $$ \mathrm{fb^{-1}} $$ are frequently used in CMS.
+To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
+
+>> ## Total Higgs bosons produced at CMS during 24 hours
+>> * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
+>> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+>>
+>> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
+{: .challenge}
+
+
+
+
 
 {% comment %}
 The luminosity of a collider is the number of collisions per area (i.e. cross section) per time. The typical unit is $$ \mathrm{cm^{-2} s^{-1}} $$. This luminosity is sometimes referred to
