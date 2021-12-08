@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-teaching: 20
-exercises: 0
+teaching: 30
+exercises: 10
 questions:
 - "What is luminosity?"
 - "What is the difference between instantaneous and integrated luminosity?"
@@ -41,9 +41,11 @@ As an example, let's *very approximately* calculate the total Higgs Boson produc
 >
 > $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst}^{\mathrm{peak}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$
 > 
+<!--
 > > ## Solution
 > > $$ \approx 0.02 \mathrm{pb^{-1} s^{-1}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
 > {: .solution}
+-->
 {: .challenge}
 
 ## Integrated Luminosity
@@ -62,9 +64,11 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 >
 > $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$
 > 
+<!--
 > > ## Solution
 > > $$ \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
 > {: .solution}
+-->
 {: .challenge}
 
 ## Importance of Luminosity
@@ -89,18 +93,42 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D/vote)
+<!--
 > > ## Solution
 > > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
 > > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
 > {: .solution}
+-->
 {: .challenge}
 
 ## Luminosity Measurement
 
+CMS has two dedicated systems for measuring luminosity, both located $$ z \approx \pm 1.8 \mathrm{m} $$ from the interaction point and radius $$ = \approx 6 \mathrm{cm}$$:
+
+Fast Beam Condition Monitor (BCM1F)
+: C-shaped PCBs arranged into two rings at each side of CMS with double-pad silicon sensors
+: Real-time histogramming with 6.25 ns per-bin facilitates measurement of machine-induced background
+
+Pixel Luminosity Telescope (PLT)
+: 16 "telescopes" (8 per side of CMS) with three hybrid silicon pixel sensors per telescope
+: Fast cluster-counting signal (40 MHz) in addition to full pixel info readout
+
+In addition, several sub-detectors are used for luminosity measurement:
+
+PCC (Pixel Cluster Counting)
+: Counts the mean number of pixel clusters in the most "stable" modules of the silicon pixel detector
+
+Hadronic Forward (HF)
+: Steel absorber with quartz fibers to detect Cherenkov light histogrammed as function of bunch crossing
+
+## Luminosity Calibration
+
+<!--
 The precise determination of integrated luminosity is particularly challenging at hadron colliders.
+-->
 
+<!--
 
-{% comment %}
 The luminosity of a collider is the number of collisions per area (i.e. cross section) per time. The typical unit is $$ \mathrm{cm^{-2} s^{-1}} $$. This luminosity is sometimes referred to
 as the "instantaneous" luminosity $$ \mathcal{L}_{inst} $$. The "integrated" luminosity is the integral of the instantaneous luminosity over time:
 
@@ -130,7 +158,7 @@ A VdM scan is a special beam condition but this value of $$ \sigma_{vis} $$ stil
 In practice the performance of the luminometers can degrade over time due to effects such as radiation damage. CMS is capable of conducting fast luminosity scans with small beam separation, so-called "emmittance scans". These scans, performed similarly to VdM scans,
 can take just a few minutes and are typically performed at the beginning and at the end of a fill.
 
-{% endcomment %}
+-->
 
 {% include links.md %}
 
