@@ -22,8 +22,7 @@ keypoints:
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
 Roughly speaking, it corresponds to the "rate of interactions/events/collisions".
-During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second.
-This yielded an overall average of 34 interactions per crossing within the CMS detector.
+During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second yielding an overall average of 34 interactions per crossing within the CMS detector.
 
 ![Interactions per crossing (pileup) for 2015-2018](https://cmslumi.web.cern.ch/publicplots/pileup_allYears_run2.png){:width="50%"}
 
@@ -59,6 +58,12 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 >>
 >> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
 {: .challenge}
+
+## Imporance of Luminosity
+
+Along with the center of mass energy, instantanous luminosity is the most significant performance parameter for any particle accelerator.
+Real-time monitoring of instantaneous luminosity is critical for the acclerator to carry out beam tuning and collision optimization.
+It is also essential for the CMS trigger system in order to scale or throttle the data throughput.
 
 
 
