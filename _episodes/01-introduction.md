@@ -60,6 +60,12 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 >> $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
 {: .challenge}
 
+## Imporance of Luminosity
+
+Along with the center of mass energy, instantanous luminosity is the most significant performance parameter for any particle accelerator.
+Real-time monitoring of instantaneous luminosity is critical for the acclerator to carry out beam tuning and collision optimization.
+It is also essential for the CMS trigger system in order to scale or throttle the data throughput.
+
 
 
 
