@@ -73,10 +73,11 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 >> * During 2018, CMS recorded around $$ \approx 60 \pm 2.5 \mathrm{fb^{-1}} $$ of good-quality data (see the [CMS Lumi POG "quick summary table"](\mathrm{fb^{-1}}))
 >> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >> * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+>> 
 >> By how much would the expected event yield change if one considers the maximum and minimum values of integrated luminosity within its uncertainty?
 >>
->> $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \mathcal{L}_{int}^{2018} \pm \delta \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$ 
->> $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$
+>> $$ \mathrm{N}_{H \rightarrow \mu\mu}^{2018} = \mathcal{L}_{int}^{2018} \pm \delta \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu\mu} $$ \
+>> $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
 >> $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
 {: .challenge}
 
