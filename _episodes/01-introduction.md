@@ -112,6 +112,8 @@ Fast Beam Condition Monitor (BCM1F)
 : C-shaped PCBs arranged into two rings at each side of CMS with double-pad silicon sensors
 : Real-time histogramming with 6.25 ns per-bin facilitates measurement of machine-induced background
 
+![BCM1F C-shape](https://cds.cern.ch/record/2765247/files/2021-05-20%2015.19.28.jpg?subformat=icon-1440){:width="50%"}
+
 Pixel Luminosity Telescope (PLT)
 : 16 "telescopes" (8 per side of CMS) with three hybrid silicon pixel sensors per telescope
 : Fast cluster-counting signal (40 MHz) in addition to full pixel info readout
@@ -119,7 +121,6 @@ Pixel Luminosity Telescope (PLT)
 ![Pixel Luminosity Telescope](https://cds.cern.ch/record/2777045/files/2021-06-29%2011.19.34.jpg?subformat=icon-1440){:width="50%"}
 
 In addition, several sub-detectors are used for luminosity measurement, among them:
-![BCM1F C-shape](https://cds.cern.ch/record/2765247/files/2021-05-20%2015.19.28.jpg?subformat=icon-1440){:width="50%"}
 
 PCC (Pixel Cluster Counting)
 : Counts the mean number of pixel clusters in the most "stable" modules of the silicon pixel detector
@@ -128,7 +129,7 @@ Hadronic Forward (HF)
 : Steel absorber with quartz fibers to detect Cherenkov light histogrammed as function of bunch crossing
 
 > ## Which detector is more photogenic
-> This is *important*
+> This is the *most important* poll!
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT/vote)
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F/vote)
 {: .challenge}
