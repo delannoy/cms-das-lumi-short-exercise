@@ -78,7 +78,7 @@ Real-time monitoring of instantaneous luminosity is critical for the acclerator 
 It is also essential for the CMS trigger system in order to scale or throttle the data throughput.
 
 Measurement of integrated luminosity is also incredibly crucial since its limited precision represents a contribution to the systematic uncertainty for most physics searches and measurements.
-The uncertainty in the integrated luminosity is often the dominant systematic uncertainty in cross-section measurements.
+The uncertainty in the integrated luminosity is often the dominant systematic uncertainty in EWK cross-section measurements.
 We can emphasize the impact of the integrated luminosity uncertainty by considering a relatively rare process:
 
 > ## 1.3 Total Higgs bosons decaying to muon pais at CMS during 2018
@@ -104,7 +104,7 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 
 ## Luminosity Measurement
 
-CMS has two dedicated systems for measuring luminosity, both located $$ z \approx \pm 1.8 \mathrm{m} $$ from the interaction point and radius $$ = \approx 6 \mathrm{cm}$$:
+CMS has two dedicated systems for measuring luminosity, both located $$ z \approx \pm 1.8 \mathrm{m} $$ from the interaction point and radius $$ \approx 6 \mathrm{cm}$$:
 
 Fast Beam Condition Monitor (BCM1F)
 : C-shaped PCBs arranged into two rings at each side of CMS with double-pad silicon sensors
@@ -114,7 +114,7 @@ Pixel Luminosity Telescope (PLT)
 : 16 "telescopes" (8 per side of CMS) with three hybrid silicon pixel sensors per telescope
 : Fast cluster-counting signal (40 MHz) in addition to full pixel info readout
 
-In addition, several sub-detectors are used for luminosity measurement:
+In addition, several sub-detectors are used for luminosity measurement, among them:
 
 PCC (Pixel Cluster Counting)
 : Counts the mean number of pixel clusters in the most "stable" modules of the silicon pixel detector
@@ -124,9 +124,20 @@ Hadronic Forward (HF)
 
 ## Luminosity Calibration
 
-<!--
-The precise determination of integrated luminosity is particularly challenging at hadron colliders.
--->
+The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions, precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
+"Relative" luminosity can be determined on arbitrary scale by measuring the event rate.
+The determination of "absolute" luminosity involes re-scaling the measured event rate by a proportionality factor, $$ \sigma_{vis} $$, derived from the properties of the colliding beams.
+
+At the LHC, the primary technique to determine the absolute luminosity scale is the van der Meer (vdM) scan method, based on dedicated beam-separation scans.
+The size and shape of the interaction region is measured by recording the relative interaction rates as a function of the transverse beam separation.
+After adopting several assumptions (e.g. the transverse and longitudinal beam densities are Gaussian, linear x–y coupling is small enough to be neglected), the visible cross-section can be expressed as
+
+$$ \sigma_{vis} = \mu_{vis}^{mathrm{max}} \cdot \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$,
+
+where $$ \mu_{vis} $$ is the peak visible interaction rate,
+$$ n_{1} $$ and $$ n_{2} $$ are the numbers of particles in each of the two bunches,
+and $$ \Sigma_{x} $$ and $$ \Sigma_{y} $$ correspond to the effective beam overlap widths in each scan plane.
+
 
 <!--
 
