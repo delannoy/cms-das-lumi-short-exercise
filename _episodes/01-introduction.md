@@ -35,7 +35,7 @@ Thus, instantaneous luminosity is usually expressed in the cgs units of $$ \math
 Units of "barns" are also used frequently, where $$ 1 \mathrm{b} = \mathrm{10^{-24} cm^{2}} $$, thanks to [two Purdue University physicists working on the Manhattan Project in 1942](https://www.symmetrymagazine.org/article/february-2006/hitting-the-broad-side-of-a-classified-barn).
 As an example, let's *very approximately* calculate the total Higgs Boson production rate at CMS:
 
-> ## Total Higgs boson production rate at CMS
+> ## 1.1 Total Higgs boson production rate at CMS
 > * During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ $$ \left( 0.02 \mathrm{pb^{-1} s^{-1}} \right) $$ at CMS
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >
@@ -56,7 +56,7 @@ It is commonly used to quantify the "amount of data" delivered by the accelerato
 Units of inverse femtobars $$ \mathrm{fb^{-1}} $$ are frequently used in CMS.
 To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
 
-> ## Total Higgs bosons produced at CMS during 24 hours
+> ## 1.2 Total Higgs bosons produced at CMS during 24 hours
 > * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 >
@@ -77,7 +77,7 @@ Measurement of integrated luminosity is also incredibly crucial since its limite
 The uncertainty in the integrated luminosity is often the dominant systematic uncertainty in cross-section measurements.
 We can emphasize the impact of the integrated luminosity uncertainty by considering a relatively rare process:
 
-> ## Total Higgs bosons decaying to muon pais at CMS during 2018
+> ## 1.3 Total Higgs bosons decaying to muon pais at CMS during 2018
 > * During 2018, CMS recorded around $$ \approx 60 \pm 2.5 \mathrm{fb^{-1}} $$ of good-quality data (see the [CMS Lumi POG "quick summary table"](\mathrm{fb^{-1}}))
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 > * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
@@ -89,15 +89,11 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B297.5%2C%20302.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B292.5%2C%20307.5%5D/vote)
 > [![](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D)](https://api.gh-polls.com/poll/01FPCNXDGM7M4K4D8ES1PXYB2J/%5B299.875%2C%20300.125%5D/vote)
-{: .challenge}
-
-<!--
 > > ## Solution
 > > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
 > > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
 > {: .solution}
 {: .challenge}
--->
 
 ## Luminosity Measurement
 
