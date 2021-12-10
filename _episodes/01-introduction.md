@@ -145,7 +145,7 @@ The determination of "absolute" luminosity involes re-scaling the measured event
 
 At the LHC, the primary technique to determine the absolute luminosity scale is the van der Meer (vdM) scan method, based on dedicated beam-separation scans.
 The size and shape of the interaction region is measured by recording the relative interaction rates as a function of the transverse beam separation.
-After adopting several assumptions (e.g. transverse and longitudinal beam densities are Gaussian, density functions are factorizable into $$x-$$ and $$y-$$dependent components, etc.), the visible cross-section can be expressed as
+After adopting several assumptions (e.g. transverse and longitudinal beam densities are Gaussian, density functions are factorizable into $$x$$- and $$y$$-dependent components, etc.), the visible cross-section can be expressed as
 
 $$ \sigma_{vis} = \mu_{vis}^{\mathrm{max}} \frac{2 \pi \Sigma_{x} \Sigma_{y}}{n_{1} n_{2}} $$
 
