@@ -49,7 +49,7 @@ It covers all of Run 2 for which there is a final approved number for physics (w
 {: .callout}
 
 Data collected by CMS is *certified* on a luminosity-section basis to determine the subset of *data of good quality to be included in physics analyses*.
-*Data certification* is carried out by taking into account both the operational health of the sub-detectors and scrutiny of the reconstructed physics objects by DPG and POG experts.
+Data certification is carried out by taking into account both the operational health of the sub-detectors and scrutiny of the reconstructed physics objects by DPG and POG experts.
 The outcome of the certification process is regularly updated as more data gets collected, and for each new version of the data processing, by the [DQM-DataCertification](https://twiki.cern.ch/twiki/bin/view/CMS/DQM).
 One of the main deliverables of this process are JSON files listing runs and lumisection which are good for physics analysis.
 
