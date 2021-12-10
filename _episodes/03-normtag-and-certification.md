@@ -9,7 +9,8 @@ objectives:
 - "Learn what is a normtag and how to use it"
 - "Learn about data certification and how it relates to physics analyses"
 keypoints:
-- ""
+- "Make sure to use a normtag when querying brilcalc for your analysis"
+- "Data collected by CMS needs to be evaluated and a subset is certified as good quality data to be used for physics analysis"
 ---
 
 > ## Important
