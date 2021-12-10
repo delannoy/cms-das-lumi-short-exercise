@@ -59,9 +59,10 @@ $$ \mathcal{L}_{int} = \int \mathcal{L}_{inst} dt $$
 
 It is commonly used to quantify the "amount of data" delivered by the accelerator or recorded by the experiment.
 Units of inverse femtobars $$ \mathrm{fb^{-1}} $$ are frequently used in CMS.
-To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
 
 ![Cumulative delivered and recorded luminosity versus time for 2015-2018 (pp data only)](https://cmslumi.web.cern.ch/publicplots/int_lumi_animated_4x_pp_run2.gif){:width="50%"}
+
+To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
 
 > ## 1.2 Total Higgs bosons produced at CMS during 24 hours
 > * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
@@ -82,7 +83,7 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 ## Importance of Luminosity
 
 Along with the center of mass energy, instantanous luminosity is the most significant performance parameter for any particle accelerator.
-Real-time monitoring of instantaneous luminosity is critical for the acclerator to carry out beam tuning and collision optimization.
+Real-time monitoring of instantaneous luminosity is critical for the accelerator to carry out beam tuning and collision optimization.
 It is also essential for the CMS trigger system in order to scale or throttle the data throughput.
 
 Measurement of integrated luminosity is also incredibly crucial since its limited precision represents a contribution to the systematic uncertainty for most physics searches and measurements.
@@ -90,7 +91,7 @@ The uncertainty in the integrated luminosity is often the dominant systematic un
 We can emphasize the impact of the integrated luminosity uncertainty by considering a relatively rare process:
 
 > ## 1.3 Total Higgs bosons decaying to muon pairs at CMS during 2018
-> * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
+> * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable))
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 > * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 > 
