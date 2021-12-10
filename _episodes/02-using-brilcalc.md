@@ -128,7 +128,7 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 >
 > `-u <unit>`
 > : Show luminosity in the specified unit and scale the output value accordingly 
-> : ["/kb", "/b", "/mb", "/ub", "/nb", "/fb", "/ab"] "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
+> : ["/kb", "/b", "/mb", "/ub", "/nb", "/pb", "/fb", "/ab"] "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
 > 
 > `--type <luminometer>`
 > : Show results from the selected luminometer
@@ -157,8 +157,13 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 > {: .solution}
 {: .challenge}
 
+
+> ## 2.1 Query luminosity info for fill corresponding to run 325000
+> Using brilcalc, determine the fill that run 325000 corresponds to.
+> What is the total recorded luminosity for this fill in picobarns?
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/gyi7as9ba7y7bbmtes5b3w3ssh).
+{: .challenge}
 <!--
-> ## Query luminosity info for fill corresponding to run 325000
 > > ## Solution
 > > Determine the fill number given a run number using overly-complicated `awk` syntax:
 > > ```bash
