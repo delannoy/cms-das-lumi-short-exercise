@@ -128,7 +128,7 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 >
 > `-u <unit>`
 > : Show luminosity in the specified unit and scale the output value accordingly 
-> : ["/kb", "/b", "/mb", "/ub", "/nb", "/pb", "/fb", "/ab"] "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
+> : ["/kb", "/b", "/mb", "/ub", "/nb", "/pb", "/fb", "/ab"], "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
 > 
 > `--type <luminometer>`
 > : Show results from the selected luminometer
