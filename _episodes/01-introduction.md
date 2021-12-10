@@ -22,7 +22,7 @@ keypoints:
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
 Roughly speaking, it corresponds to the "real-time rate of interactions/events/collisions".
-During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 25 million times per second yielding an overall average of 34 interactions per crossing within the CMS detector.
+During Run 2 of the LHC, groups of ~100 billion protons were crossed as often as 40 million times per second yielding an overall average of 34 interactions per crossing within the CMS detector.
 
 ![Interactions per crossing (pileup) for 2015-2018](https://cmslumi.web.cern.ch/publicplots/pileup_allYears_run2.png){:width="50%"}
 
