@@ -28,7 +28,7 @@ This lesson will focus on the `brilcalc lumi` subcommand, which can query the de
 Let's try a few examples:
 
 > ## Glossary
-> If you are unfamiliar with "fills", "runs", "lumisections", etc, you can find their definitions in the [Glossary](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html#glossary)
+> If you are unfamiliar with "fills", "runs", "lumisections", etc., you can find their definitions in the [Glossary](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html#glossary)
 {: .callout}
 
 > ## Run brilcalc for [fill 6666](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6666)
@@ -128,7 +128,7 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 >
 > `-u <unit>`
 > : Show luminosity in the specified unit and scale the output value accordingly 
-> : ["/kb","/b","/mb","/ub","/nb","/fb","/ab"] "1e[21,24,27,30,33,36,39,42]/cm2"
+> : ["/kb", "/b", "/mb", "/ub", "/nb", "/fb", "/ab"] "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
 > 
 > `--type <luminometer>`
 > : Show results from the selected luminometer
@@ -157,6 +157,7 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 > {: .solution}
 {: .challenge}
 
+<!--
 > ## Query luminosity info for fill corresponding to run 325000
 > > ## Solution
 > > Determine the fill number given a run number using overly-complicated `awk` syntax:
@@ -207,3 +208,4 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 > > {: .output}
 > {: .solution}
 {: .challenge}
+-->
