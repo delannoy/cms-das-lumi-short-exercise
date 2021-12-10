@@ -160,7 +160,7 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 
 > ## 2.1 Query luminosity info for fill corresponding to run 325000
 > Using brilcalc, determine the fill that run 325000 corresponds to.
-> What is the total recorded luminosity for this fill in picobarns?
+> What is the total recorded luminosity for this fill in inverse picobarns?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/gyi7as9ba7y7bbmtes5b3w3ssh).
 {: .challenge}
 <!--
