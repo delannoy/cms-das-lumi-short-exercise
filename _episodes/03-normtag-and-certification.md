@@ -6,7 +6,8 @@ questions:
 - "What is a normtag?"
 - "What is data certification?"
 objectives:
-- ""
+- "Learn what is a normtag and how to use it"
+- "Learn about data certification and how it relates to physics analyses"
 keypoints:
 - ""
 ---
@@ -33,6 +34,12 @@ The Run 2 physics normtag is **`/cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/no
 **Always use this normtag for pp runs.**
 **This is the only normtag which can be used for physics analyses.**
 It covers all of Run 2 for which there is a final approved number for physics (which includes all pp running and some special runs).
+
+> ## Query fill 6666 using the physics normtag
+>
+> Using the physics normtag, what is the recorded luminosity in picobarns for fill 6666?
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/d1woqdfiji8fbkyj56xrprhike).
+{: .challenge}
 
 # Data Certification
 
