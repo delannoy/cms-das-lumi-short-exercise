@@ -45,10 +45,16 @@ It covers all of Run 2 for which there is a final approved number for physics (w
 # Data Certification
 
 > ## Note
-> This section has some overlap with [Excercise 6 from the PPD offline lesson](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchool2022PPDExercise#Exercise_6_Compute_the_integrate)
+> This section has some overlap with [Excercise 6 from the PPD offline lesson](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchool2022PPDExercise#Exercise_6_Compute_the_integrate) and [Exercise 14 from the third Pre-exercise set](https://fnallpc.github.io/cms-das-pre-exercises/03-CMSDataAnalysisSchoolPreExerciseThirdSet/index.html)
 {: .callout}
 
 Data collected by CMS is *certified* on a luminosity-section basis to determine the subset of *data of good quality to be included in physics analyses*.
 *Data certification* is carried out by taking into account both the operational health of the sub-detectors and scrutiny of the reconstructed physics objects by DPG and POG experts.
 The outcome of the certification process is regularly updated as more data gets collected, and for each new version of the data processing, by the [DQM-DataCertification](https://twiki.cern.ch/twiki/bin/view/CMS/DQM).
 One of the main deliverables of this process are JSON files listing runs and lumisection which are good for physics analysis.
+
+> ## Query processedLumis.json to determine hte recorded luminosity for your crab job datset
+>
+> Using the physics normtag, what is the recorded luminosity in inverse femtobarns for your crab job datset?
+> Please write the correct answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/channels/offlineshortexlumi).
+{: .challenge}
