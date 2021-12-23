@@ -109,8 +109,8 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 -->
 <!--
 > > ## Solution
-> > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 307.5 $$\
-> > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 292.5 $$
+> > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 615 $$\
+> > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 585 $$
 > {: .solution}
 -->
 {: .challenge}
