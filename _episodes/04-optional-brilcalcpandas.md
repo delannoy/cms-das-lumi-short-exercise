@@ -35,10 +35,6 @@ All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` opt
 
 ## Usage examples:
 
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
-```
-{: .source}
 ```python
 from brilcalcDF import Query
 Query.lumi(r=325000, byls=True, minBiasXsec=80000, type='hfet', precision='2f', hltpath='HLT_ZeroBias_v6')[1]
@@ -64,10 +60,6 @@ DEBUG: brilcalc lumi --output-style csv --tssec -r 325000 --byls --minBiasXsec 8
 {: .output}
 
 
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
-```
-{: .source}
 ```python
 from brilcalcDF import Query
 (summary, data) = Query.lumi(fill=6666, beamstatus='STABLE BEAMS', type='pltzero', byls=True)
@@ -104,10 +96,6 @@ dtype: object
 {: .output}
 
 
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
-```
-{: .source}
 ```python
 from brilcalcDF import Query
 Query.lumi(run=314848, beamstatus='STABLE BEAMS', xing=True, xingTr=0.5, expandBX=True)[1]
@@ -134,10 +122,6 @@ INFO: BCID: [4, 451, 1201, 1501, 1786, 2101, 2451, 2801, 3118]
 {: .output}
 
 
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
-```
-{: .source}
 ```python
 from brilcalcDF import Query
 Query.beam(begin='2018-07-01', end='2018 jul 31', beamstatus='stable beams', perFill=True)[1]
@@ -188,10 +172,6 @@ Data tag    19v3
 {: .output}
 
 
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
-```
-{: .source}
 ```python
 from brilcalcDF import Query
 Query.trg(run=325000, prescale=True, hltpath='HLT_ZeroBias_v6')
