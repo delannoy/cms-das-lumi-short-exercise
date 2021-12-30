@@ -251,16 +251,19 @@ Query.beam(begin='2018-07-01', end='2018 jul 31', beamstatus='stable beams', per
 > [36 rows x 7 columns]
 > ```
 > {: .output}
-{: solution}
+{: .solution}
 
 ```python
 Query.trg(run=325000, prescale=True, hltpath='HLT_ZeroBias_v6')
 ```
 {: .source}
-```
-DEBUG: brilcalc trg --output-style csv -r 325000 --prescale --hltpath HLT_ZeroBias_v6
-      run cmsls prescidx totprescval    hltpath/prescval logic     l1bit/prescval
-0  325000     1        5      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
-1  325000   261        6      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
-```
-{: .output}
+
+> ## Output
+> ```
+> DEBUG: brilcalc trg --output-style csv -r 325000 --prescale --hltpath HLT_ZeroBias_v6
+>       run cmsls prescidx totprescval    hltpath/prescval logic     l1bit/prescval
+> 0  325000     1        5      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
+> 1  325000   261        6      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
+> ```
+> {: .output}
+{: .solution}
