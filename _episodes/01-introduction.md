@@ -139,7 +139,7 @@ PCC (Pixel Cluster Counting)
 Hadronic Forward (HF)
 : Steel absorber with quartz fibers to detect Cherenkov light histogrammed as function of bunch crossing
 
-> ## Which detector is more photogenic
+> ## Which detector is more photogenic?
 > This is the *most important* poll!
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT/vote)
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F/vote)
