@@ -19,7 +19,7 @@ keypoints:
 
 # brilcalcpandas
 
-`brilcalcpandas` is an unofficial `pandas.DataFrame` wrapper for `brilcalc` queries.
+`brilcalcpandas` is an unofficial [`pandas.DataFrame`](https://realpython.com/pandas-dataframe/) wrapper for `brilcalc` queries.
 
 > ## Setup
 > ```bash
@@ -40,24 +40,26 @@ from brilcalcDF import Query
 Query.lumi(r=325000, byls=True, minBiasXsec=80000, type='hfet', precision='2f', hltpath='HLT_ZeroBias_v6')[1]
 ```
 {: .source}
-```
-DEBUG: brilcalc lumi --output-style csv --tssec -r 325000 --byls --minBiasXsec 80000 --type hfet --precision 2f --hltpath HLT_ZeroBias_v6
-                           dt        time  deliveredLS  recordedLS     run  fill  delivered(/ub)  recorded(/ub)  avgpu source
-0   2018-10-21 08:03:55+00:00  1540109035            1           1  325000  7324            0.32           0.29   35.3   HFET
-1   2018-10-21 08:04:18+00:00  1540109058            2           2  325000  7324            0.32           0.21   35.4   HFET
-2   2018-10-21 08:04:42+00:00  1540109082            3           3  325000  7324            0.32           0.31   35.3   HFET
-3   2018-10-21 08:05:05+00:00  1540109105            4           4  325000  7324            0.32           0.21   35.3   HFET
-4   2018-10-21 08:05:28+00:00  1540109128            5           5  325000  7324            0.32           0.30   35.3   HFET
-..                        ...         ...          ...         ...     ...   ...             ...            ...    ...    ...
-366 2018-10-21 10:26:07+00:00  1540117567          367         367  325000  7324            0.26           0.25   28.8   HFET
-367 2018-10-21 10:26:30+00:00  1540117590          368         368  325000  7324            0.26           0.25   28.8   HFET
-368 2018-10-21 10:26:53+00:00  1540117613          369         369  325000  7324            0.26           0.25   28.8   HFET
-369 2018-10-21 10:27:17+00:00  1540117637          370         370  325000  7324            0.26           0.25   28.8   HFET
-370 2018-10-21 10:27:40+00:00  1540117660          371         371  325000  7324            0.26           0.21   28.8   HFET
-
-[371 rows x 10 columns]
-```
-{: .output}
+> ## Output
+> ```
+> DEBUG: brilcalc lumi --output-style csv --tssec -r 325000 --byls --minBiasXsec 80000 --type hfet --precision 2f --hltpath HLT_ZeroBias_v6
+>                            dt        time  deliveredLS  recordedLS     run  fill  delivered(/ub)  recorded(/ub)  avgpu source
+> 0   2018-10-21 08:03:55+00:00  1540109035            1           1  325000  7324            0.32           0.29   35.3   HFET
+> 1   2018-10-21 08:04:18+00:00  1540109058            2           2  325000  7324            0.32           0.21   35.4   HFET
+> 2   2018-10-21 08:04:42+00:00  1540109082            3           3  325000  7324            0.32           0.31   35.3   HFET
+> 3   2018-10-21 08:05:05+00:00  1540109105            4           4  325000  7324            0.32           0.21   35.3   HFET
+> 4   2018-10-21 08:05:28+00:00  1540109128            5           5  325000  7324            0.32           0.30   35.3   HFET
+> ..                        ...         ...          ...         ...     ...   ...             ...            ...    ...    ...
+> 366 2018-10-21 10:26:07+00:00  1540117567          367         367  325000  7324            0.26           0.25   28.8   HFET
+> 367 2018-10-21 10:26:30+00:00  1540117590          368         368  325000  7324            0.26           0.25   28.8   HFET
+> 368 2018-10-21 10:26:53+00:00  1540117613          369         369  325000  7324            0.26           0.25   28.8   HFET
+> 369 2018-10-21 10:27:17+00:00  1540117637          370         370  325000  7324            0.26           0.25   28.8   HFET
+> 370 2018-10-21 10:27:40+00:00  1540117660          371         371  325000  7324            0.26           0.21   28.8   HFET
+> 
+> [371 rows x 10 columns]
+> ```
+> {: .output}
+{: .solution}
 
 
 ```python
