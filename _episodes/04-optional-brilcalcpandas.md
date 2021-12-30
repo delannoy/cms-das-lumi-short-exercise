@@ -36,7 +36,7 @@ All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` opt
 
 ### Main function:
 
-The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
+The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
 
 ```bash
 /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m brilcalcDF
@@ -63,6 +63,7 @@ The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > 2018          67.858919
 > 2015-2018    163.553734
 > 2016-2018    159.245146
+> 
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
 > INFO: total 2015 legacy recorded luminosity: 2.2737730369999998 /fb
 > ________________________________________________________________________________
@@ -81,6 +82,7 @@ The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > 2018          59.832475
 > 2015-2018    139.919309
 > 2016-2018    137.645536
+> 
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
 > INFO: total 2015 prelegacy recorded luminosity: 2.2737730369999998 /fb
 > ________________________________________________________________________________
@@ -99,6 +101,7 @@ The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > 2018          59.740565
 > 2015-2018    139.869784
 > 2016-2018    137.596011
+> 
 > ```
 > {: .output}
 {: .solution}
@@ -138,58 +141,63 @@ summary
 data
 ```
 {: .source}
-```
-DEBUG: brilcalc lumi --output-style csv --tssec -f 6666 -b 'STABLE BEAMS' --type pltzero --byls
-Data tag                    19v3
-Norm tag                    None
-nfill                          1
-nrun                           6
-nls                         1966
-ncms                        1926
-totdelivered(/ub)    4.50713e+08
-totrecorded(/ub)     4.18091e+08
-dtype: object
-                            dt        time  deliveredLS  recordedLS     run  fill  delivered(/ub)  recorded(/ub)  avgpu  E(GeV)    beamstatus   source
-0    2018-05-10 21:13:39+00:00  1525986819           32          32  316109  6666   366233.213965  358491.897262   44.0    6500  STABLE BEAMS  PLTZERO
-1    2018-05-10 21:14:02+00:00  1525986842           33          33  316109  6666   366037.872369  123206.539042   43.9    6500  STABLE BEAMS  PLTZERO
-2    2018-05-10 21:14:25+00:00  1525986865           34          34  316109  6666   365729.232190       0.000000   43.9    6500  STABLE BEAMS  PLTZERO
-3    2018-05-10 21:14:49+00:00  1525986889           35          35  316109  6666   328216.224407       0.000000   39.4    6500  STABLE BEAMS  PLTZERO
-4    2018-05-10 21:15:12+00:00  1525986912           36          36  316109  6666    74180.419333       0.000000    8.9    6500  STABLE BEAMS  PLTZERO
-...                        ...         ...          ...         ...     ...   ...             ...            ...    ...     ...           ...      ...
-1961 2018-05-11 09:54:54+00:00  1526032494         1576        1576  316114  6666   135914.146076  133960.675502   16.3    6500  STABLE BEAMS  PLTZERO
-1962 2018-05-11 09:55:17+00:00  1526032517         1577        1577  316114  6666   135810.351646  133861.500315   16.3    6500  STABLE BEAMS  PLTZERO
-1963 2018-05-11 09:55:40+00:00  1526032540         1578        1578  316114  6666   135627.336989  133677.464474   16.3    6500  STABLE BEAMS  PLTZERO
-1964 2018-05-11 09:56:04+00:00  1526032564         1579        1579  316114  6666   135447.930495  133500.365030   16.3    6500  STABLE BEAMS  PLTZERO
-1965 2018-05-11 09:56:27+00:00  1526032587         1580        1580  316114  6666   135538.498791  133592.922141   16.3    6500  STABLE BEAMS  PLTZERO
 
-[1966 rows x 12 columns]
-```
-{: .output}
-
+> ## Output
+> ```
+> DEBUG: brilcalc lumi --output-style csv --tssec -f 6666 -b 'STABLE BEAMS' --type pltzero --byls
+> Data tag                    19v3
+> Norm tag                    None
+> nfill                          1
+> nrun                           6
+> nls                         1966
+> ncms                        1926
+> totdelivered(/ub)    4.50713e+08
+> totrecorded(/ub)     4.18091e+08
+> dtype: object
+>                             dt        time  deliveredLS  recordedLS     run  fill  delivered(/ub)  recorded(/ub)  avgpu  E(GeV)    beamstatus   source
+> 0    2018-05-10 21:13:39+00:00  1525986819           32          32  316109  6666   366233.213965  358491.897262   44.0    6500  STABLE BEAMS  PLTZERO
+> 1    2018-05-10 21:14:02+00:00  1525986842           33          33  316109  6666   366037.872369  123206.539042   43.9    6500  STABLE BEAMS  PLTZERO
+> 2    2018-05-10 21:14:25+00:00  1525986865           34          34  316109  6666   365729.232190       0.000000   43.9    6500  STABLE BEAMS  PLTZERO
+> 3    2018-05-10 21:14:49+00:00  1525986889           35          35  316109  6666   328216.224407       0.000000   39.4    6500  STABLE BEAMS  PLTZERO
+> 4    2018-05-10 21:15:12+00:00  1525986912           36          36  316109  6666    74180.419333       0.000000    8.9    6500  STABLE BEAMS  PLTZERO
+> ...                        ...         ...          ...         ...     ...   ...             ...            ...    ...     ...           ...      ...
+> 1961 2018-05-11 09:54:54+00:00  1526032494         1576        1576  316114  6666   135914.146076  133960.675502   16.3    6500  STABLE BEAMS  PLTZERO
+> 1962 2018-05-11 09:55:17+00:00  1526032517         1577        1577  316114  6666   135810.351646  133861.500315   16.3    6500  STABLE BEAMS  PLTZERO
+> 1963 2018-05-11 09:55:40+00:00  1526032540         1578        1578  316114  6666   135627.336989  133677.464474   16.3    6500  STABLE BEAMS  PLTZERO
+> 1964 2018-05-11 09:56:04+00:00  1526032564         1579        1579  316114  6666   135447.930495  133500.365030   16.3    6500  STABLE BEAMS  PLTZERO
+> 1965 2018-05-11 09:56:27+00:00  1526032587         1580        1580  316114  6666   135538.498791  133592.922141   16.3    6500  STABLE BEAMS  PLTZERO
+>·
+> [1966 rows x 12 columns]
+> ```
+> {: .output}
+{: .solution}
 
 ```python
 Query.lumi(run=314848, beamstatus='STABLE BEAMS', xing=True, xingTr=0.5, expandBX=True)[1]
 ```
 {: .source}
-```
-DEBUG: brilcalc lumi --output-style csv --tssec -r 314848 -b 'STABLE BEAMS' --xing --xingTr 0.5
-INFO: BCID: [4, 451, 1201, 1501, 1786, 2101, 2451, 2801, 3118]
-                           dt        time  deliveredLS  recordedLS     run  fill  delivered(/ub)  ...  bx1201_recorded(/ub)  bx1501_recorded(/ub)  bx1786_recorded(/ub) bx2101_recorded(/ub) bx2451_recorded(/ub)  bx2801_recorded(/ub)  bx3118_recorded(/ub)
-0   2018-04-21 21:16:22+00:00  1524345382          303         303  314848  6592     1023.219277  ...                   NaN             59.096645             74.620178            98.192459            98.747116             81.036247             85.137383
-1   2018-04-21 21:16:46+00:00  1524345406          304         304  314848  6592     1022.092171  ...                   NaN             89.116096            112.602478           148.243378           148.928726            122.231300            128.472565
-2   2018-04-21 21:17:09+00:00  1524345429          305         305  314848  6592     1021.977904  ...                   NaN             98.439751            124.369026           163.686539           164.264313            134.837982            141.743805
-3   2018-04-21 21:17:32+00:00  1524345452          306         306  314848  6592     1020.316278  ...                   NaN             98.375519            124.178719           163.212494           164.194458            134.556137            141.515793
-4   2018-04-21 21:17:56+00:00  1524345476          307         307  314848  6592     1018.982958  ...                   NaN             98.182922            124.135719           163.018448           163.825027            134.330048            141.284210
-..                        ...         ...          ...         ...     ...   ...             ...  ...                   ...                   ...                   ...                  ...                  ...                   ...                   ...
-435 2018-04-22 00:08:29+00:00  1524355709          746         746  314848  6592     1065.245354  ...                   NaN             63.296021             79.123436            98.062996            98.313850             78.557487             82.477425
-436 2018-04-22 00:08:52+00:00  1524355732          747         747  314848  6592     1064.664594  ...                   NaN            106.530205            133.222351           164.895477           165.477814            132.100494            138.753906
-437 2018-04-22 00:09:16+00:00  1524355756          748         748  314848  6592     1063.752060  ...                   NaN            106.456993            133.053528           164.800476           165.278717            132.042389            138.571884
-438 2018-04-22 00:09:39+00:00  1524355779          749         749  314848  6592     1063.292415  ...                   NaN            106.372993            132.940796           164.646072           165.179626            131.935623            138.617996
-439 2018-04-22 00:10:02+00:00  1524355802          750         750  314848  6592      798.497156  ...                   NaN             79.934601             99.651070           123.636879           124.072205             98.972488            104.007950
 
-[440 rows x 30 columns]
-```
-{: .output}
+> ## Output
+> ```
+> DEBUG: brilcalc lumi --output-style csv --tssec -r 314848 -b 'STABLE BEAMS' --xing --xingTr 0.5
+> INFO: BCID: [4, 451, 1201, 1501, 1786, 2101, 2451, 2801, 3118]
+>                            dt        time  deliveredLS  recordedLS  ...  bx2101_recorded(/ub)  bx2451_recorded(/ub)  bx2801_recorded(/ub)  bx3118_recorded(/ub)
+> 0   2018-04-21 21:16:22+00:00  1524345382          303         303  ...             98.192459             98.747116             81.036247             85.137383
+> 1   2018-04-21 21:16:46+00:00  1524345406          304         304  ...            148.243378            148.928726            122.231300            128.472565
+> 2   2018-04-21 21:17:09+00:00  1524345429          305         305  ...            163.686539            164.264313            134.837982            141.743805
+> 3   2018-04-21 21:17:32+00:00  1524345452          306         306  ...            163.212494            164.194458            134.556137            141.515793
+> 4   2018-04-21 21:17:56+00:00  1524345476          307         307  ...            163.018448            163.825027            134.330048            141.284210
+> ..                        ...         ...          ...         ...  ...                   ...                   ...                   ...                   ...
+> 435 2018-04-22 00:08:29+00:00  1524355709          746         746  ...             98.062996             98.313850             78.557487             82.477425
+> 436 2018-04-22 00:08:52+00:00  1524355732          747         747  ...            164.895477            165.477814            132.100494            138.753906
+> 437 2018-04-22 00:09:16+00:00  1524355756          748         748  ...            164.800476            165.278717            132.042389            138.571884
+> 438 2018-04-22 00:09:39+00:00  1524355779          749         749  ...            164.646072            165.179626            131.935623            138.617996
+> 439 2018-04-22 00:10:02+00:00  1524355802          750         750  ...            123.636879            124.072205             98.972488            104.007950
+> 
+> [440 rows x 30 columns]
+> ```
+> {: .output}
+{: .solution}
 
 
 ```python
