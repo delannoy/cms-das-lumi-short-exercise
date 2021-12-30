@@ -148,8 +148,9 @@ Hadronic Forward (HF)
 ## Luminosity Calibration
 
 The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions and precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
-"Relative" luminosity can be determined on arbitrary scale by measuring the event rate.
+A sub-detector can measure a "relative" luminosity on an arbitrary scale based on the reported event rate.
 The determination of "absolute" luminosity involes re-scaling the measured event rate by a proportionality factor, $$ \sigma_{vis} $$, derived from the properties of the colliding beams.
+This scaling factor may be thought of as a way to account for the sub-detector's particular acceptance and response.
 
 At the LHC, the primary technique to determine the absolute luminosity scale is the van der Meer (vdM) scan method, based on dedicated beam-separation scans.
 The size and shape of the interaction region is measured by recording the relative interaction rates as a function of the transverse beam separation.
@@ -190,7 +191,7 @@ Other corrections
 
 ### Rate corrections under physics running conditions
 
-Several corrections must be applied to uncalibrated luminometer rates to ensure that the final luminosity values are accurate.
+Several corrections must be applied to luminometer rates to ensure that the final luminosity values are accurate.
 
 Out-of-time pileup corrections
 : Most detectors have out-of-time contributions that do not arise from the main colliding bunch (spillover of electronic signals and real additional response from material activation)
