@@ -45,8 +45,7 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 
 > ## Output
 > ```
-> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/15 00:00:00' --end '12/31/15 23:59:59'
-> INFO: total 2015 delivered luminosity: 4.308588532 /fb
+> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/15 00:00:00' --end '12/31/15 23:59:59'                                                                                                           > INFO: total 2015 delivered luminosity: 4.308588532 /fb
 > ________________________________________________________________________________
 > DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/16 00:00:00' --end '12/31/16 23:59:59'
 > INFO: total 2016 delivered luminosity: 41.578962968 /fb
@@ -57,13 +56,6 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/18 00:00:00' --end '12/31/18 23:59:59'
 > INFO: total 2018 delivered luminosity: 67.85891887 /fb
 > ________________________________________________________________________________
-> 2015           4.308589
-> 2016          41.578963
-> 2017          49.807264
-> 2018          67.858919
-> 2015-2018    163.553734
-> 2016-2018    159.245146
-> 
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
 > INFO: total 2015 legacy recorded luminosity: 2.2737730369999998 /fb
 > ________________________________________________________________________________
@@ -76,13 +68,6 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
 > INFO: total 2018 legacy recorded luminosity: 59.832475339 /fb
 > ________________________________________________________________________________
-> 2015           2.273773
-> 2016          36.333380
-> 2017          41.479681
-> 2018          59.832475
-> 2015-2018    139.919309
-> 2016-2018    137.645536
-> 
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
 > INFO: total 2015 prelegacy recorded luminosity: 2.2737730369999998 /fb
 > ________________________________________________________________________________
@@ -95,13 +80,10 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 > DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/ReReco/Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt
 > INFO: total 2018 prelegacy recorded luminosity: 59.740565202 /fb
 > ________________________________________________________________________________
-> 2015           2.273773
-> 2016          36.326450
-> 2017          41.528995
-> 2018          59.740565
-> 2015-2018    139.869784
-> 2016-2018    137.596011
-> 
+>                                 2015       2016       2017       2018   2015-2018   2016-2018
+> delivered luminosity (/fb)  4.308589  41.578963  49.807264  67.858919  163.553734  159.245146
+> legacy luminosity (/fb)     2.273773  36.333380  41.479681  59.832475  139.919309  137.645536
+> prelegacy luminosity (/fb)  2.273773  36.326450  41.528995  59.740565  139.869784  137.596011
 > ```
 > {: .output}
 {: .solution}
