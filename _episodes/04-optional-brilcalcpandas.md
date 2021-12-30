@@ -20,6 +20,7 @@ keypoints:
 # brilcalcpandas
 
 `brilcalcpandas` is an unofficial [`pandas.DataFrame`](https://realpython.com/pandas-dataframe/) wrapper for `brilcalc` queries.
+All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` options are supported as keyword arguments.
 
 > ## Setup
 > ```bash
@@ -31,9 +32,78 @@ keypoints:
 > {: .source}
 {: .checklist}
 
-All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` options are supported as keyword arguments.
-
 ## Usage examples:
+
+### Main function:
+
+The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
+
+```bash
+/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m brilcalcDF
+```
+{: .source}
+
+> ## Output
+> ```
+> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/15 00:00:00' --end '12/31/15 23:59:59'
+> INFO: total 2015 delivered luminosity: 4.308588532 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/16 00:00:00' --end '12/31/16 23:59:59'
+> INFO: total 2016 delivered luminosity: 41.578962968 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/17 00:00:00' --end '12/31/17 23:59:59'
+> INFO: total 2017 delivered luminosity: 49.807263743 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/18 00:00:00' --end '12/31/18 23:59:59'
+> INFO: total 2018 delivered luminosity: 67.85891887 /fb
+> ________________________________________________________________________________
+> 2015           4.308589
+> 2016          41.578963
+> 2017          49.807264
+> 2018          67.858919
+> 2015-2018    163.553734
+> 2016-2018    159.245146
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
+> INFO: total 2015 legacy recorded luminosity: 2.2737730369999998 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
+> INFO: total 2016 legacy recorded luminosity: 36.333380074000004 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt
+> INFO: total 2017 legacy recorded luminosity: 41.479680529 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
+> INFO: total 2018 legacy recorded luminosity: 59.832475339 /fb
+> ________________________________________________________________________________
+> 2015           2.273773
+> 2016          36.333380
+> 2017          41.479681
+> 2018          59.832475
+> 2015-2018    139.919309
+> 2016-2018    137.645536
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
+> INFO: total 2015 prelegacy recorded luminosity: 2.2737730369999998 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/ReReco/Final/Cert_271036-284044_13TeV_ReReco_07Aug2017_Collisions16_JSON.txt
+> INFO: total 2016 prelegacy recorded luminosity: 36.32645008 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/ReReco/Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON_v1.txt
+> INFO: total 2017 prelegacy recorded luminosity: 41.528995402 /fb
+> ________________________________________________________________________________
+> DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/ReReco/Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt
+> INFO: total 2018 prelegacy recorded luminosity: 59.740565202 /fb
+> ________________________________________________________________________________
+> 2015           2.273773
+> 2016          36.326450
+> 2017          41.528995
+> 2018          59.740565
+> 2015-2018    139.869784
+> 2016-2018    137.596011
+> ```
+> {: .output}
+{: .solution}
+
+### Interactive usage:
 
 ```python
 from brilcalcDF import Query
@@ -63,7 +133,6 @@ Query.lumi(r=325000, byls=True, minBiasXsec=80000, type='hfet', precision='2f', 
 
 
 ```python
-from brilcalcDF import Query
 (summary, data) = Query.lumi(fill=6666, beamstatus='STABLE BEAMS', type='pltzero', byls=True)
 summary
 data
@@ -99,7 +168,6 @@ dtype: object
 
 
 ```python
-from brilcalcDF import Query
 Query.lumi(run=314848, beamstatus='STABLE BEAMS', xing=True, xingTr=0.5, expandBX=True)[1]
 ```
 {: .source}
@@ -125,7 +193,6 @@ INFO: BCID: [4, 451, 1201, 1501, 1786, 2101, 2451, 2801, 3118]
 
 
 ```python
-from brilcalcDF import Query
 Query.beam(begin='2018-07-01', end='2018 jul 31', beamstatus='stable beams', perFill=True)[1]
 ```
 {: .source}
@@ -175,7 +242,6 @@ Data tag    19v3
 
 
 ```python
-from brilcalcDF import Query
 Query.trg(run=325000, prescale=True, hltpath='HLT_ZeroBias_v6')
 ```
 {: .source}
@@ -184,70 +250,5 @@ DEBUG: brilcalc trg --output-style csv -r 325000 --prescale --hltpath HLT_ZeroBi
       run cmsls prescidx totprescval    hltpath/prescval logic     l1bit/prescval
 0  325000     1        5      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
 1  325000   261        6      929812  HLT_ZeroBias_v6/52   ONE  L1_ZeroBias/17881
-```
-{: .output}
-
-
-The main() function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
-
-```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m brilcalcDF
-```
-{: .source}
-```
-DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/15 00:00:00' --end '12/31/15 23:59:59'
-INFO: total 2015 delivered luminosity: 4.308588532 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/16 00:00:00' --end '12/31/16 23:59:59'
-INFO: total 2016 delivered luminosity: 41.578962968 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/17 00:00:00' --end '12/31/17 23:59:59'
-INFO: total 2017 delivered luminosity: 49.807263743 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -b 'STABLE BEAMS' --amodetag PROTPHYS --beamenergy 6500 -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_BRIL.json --begin '01/01/18 00:00:00' --end '12/31/18 23:59:59'
-INFO: total 2018 delivered luminosity: 67.85891887 /fb
-________________________________________________________________________________
-2015           4.308589
-2016          41.578963
-2017          49.807264
-2018          67.858919
-2015-2018    163.553734
-2016-2018    159.245146
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
-INFO: total 2015 legacy recorded luminosity: 2.2737730369999998 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
-INFO: total 2016 legacy recorded luminosity: 36.333380074000004 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt
-INFO: total 2017 legacy recorded luminosity: 41.479680529 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
-INFO: total 2018 legacy recorded luminosity: 59.832475339 /fb
-________________________________________________________________________________
-2015           2.273773
-2016          36.333380
-2017          41.479681
-2018          59.832475
-2015-2018    139.919309
-2016-2018    137.645536
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Reprocessing/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt
-INFO: total 2015 prelegacy recorded luminosity: 2.2737730369999998 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions16/13TeV/ReReco/Final/Cert_271036-284044_13TeV_ReReco_07Aug2017_Collisions16_JSON.txt
-INFO: total 2016 prelegacy recorded luminosity: 36.32645008 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions17/13TeV/ReReco/Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON_v1.txt
-INFO: total 2017 prelegacy recorded luminosity: 41.528995402 /fb
-________________________________________________________________________________
-DEBUG: brilcalc lumi --output-style csv --tssec -u /fb --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/ReReco/Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt
-INFO: total 2018 prelegacy recorded luminosity: 59.740565202 /fb
-________________________________________________________________________________
-2015           2.273773
-2016          36.326450
-2017          41.528995
-2018          59.740565
-2015-2018    139.869784
-2016-2018    137.596011
 ```
 {: .output}
