@@ -93,22 +93,26 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 
 > ## Example `brilcalc` common command options
 > Selections
-> : select period to query
+> : period to query
 > 
 > * `-f <fill>`
 > * `-r <run>`
+> * `--begin <fill>`
+> * `--begin <run>`
 > * `--begin <MM/DD/YY HH:MM:SS>` (UTC)
+> * `--end <fill>`
+> * `--end <run>`
 > * `--end <MM/DD/YY HH:MM:SS>` (UTC)
 > 
 > Filters
-> : filter conditions to query
+> : conditions to query
 > 
 > * `-b <beam status>` ["STABLE BEAMS", "FLAT TOP", "ADJUST", "SQUEEZE"]
 > * `--amodetag <machine mode>` ["PROTPHYS", "IONPHYS", "PAPHYS"]
 > * `--beamenergy <beam energy>` (in GeV)
 > 
 > Output/Display
-> : specify output file, table/csv/html output format, utc/local time, etc.
+> : output file, table/csv/html output format, utc/local time, etc.
 > 
 > * `-o <output file>` (csv format)
 > * `--output-style <output format>` ["tab", "csv", "html"] (ignored if `-o` is provided)
@@ -128,7 +132,8 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 >
 > `-u <unit>`
 > : Show luminosity in the specified unit and scale the output value accordingly 
-> : ["/kb", "/b", "/mb", "/ub", "/nb", "/pb", "/fb", "/ab"], "1e[21, 24, 27, 30, 33, 36, 39, 42]/cm2"
+> : ["/kb", "/b", "/mb", "/ub", "/nb", "/pb", "/fb", "/ab"]
+> : ["1e21/cm2", "1e24/cm2", "1e27/cm2", "1e30/cm2", "1e33/cm2", "1e36/cm2", "1e39/cm2", "1e42/cm2"]
 > 
 > `--type <luminometer>`
 > : Show results from the selected luminometer
