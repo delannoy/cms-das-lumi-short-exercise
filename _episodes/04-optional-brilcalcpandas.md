@@ -110,6 +110,9 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 
 ```python
 from brilcalcDF import Query
+```
+
+```python
 Query.lumi(r=325000, byls=True, minBiasXsec=80000, type='hfet', precision='2f', hltpath='HLT_ZeroBias_v6')[1]
 ```
 {: .source}
