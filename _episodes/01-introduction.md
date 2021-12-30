@@ -18,6 +18,10 @@ keypoints:
 - "Measurement of luminosity is done with several systems in the detector."
 ---
 
+> ## References
+> You can find several [papers](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html#papers) with much more technical detail and several [articles](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html#articles) with additional (less formal) information in the [References](https://delannoy.github.io/cms-das-lumi-short-exercise/reference.html).
+{: .callout}
+
 ## Instantanous Luminosity
 
 In the context of the LHC, instantaneous luminosity, $$ \mathcal{L}_{inst} $$, corresponds to the number of "interactions" produced when "bunches" of protons are crossed.
@@ -148,7 +152,7 @@ Hadronic Forward (HF)
 ## Luminosity Calibration
 
 The precise determination of integrated luminosity is particularly challenging at hadron colliders, in part due to the theoretical predictions (e.g. uncertainties in the parton distribution functions and precision of parton-level cross-section calculations) being generally less precise compared to $$ e^{+} e^{−} $$ colliders.
-A sub-detector can measure a "relative" luminosity on an arbitrary scale based on the reported event rate.
+A sub-detector can measure "relative" luminosity on an arbitrary scale based on the reported event rate.
 The determination of "absolute" luminosity involes re-scaling the measured event rate by a proportionality factor, $$ \sigma_{vis} $$, derived from the properties of the colliding beams.
 This scaling factor may be thought of as a way to account for the sub-detector's particular acceptance and response.
 
