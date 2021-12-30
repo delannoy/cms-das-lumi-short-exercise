@@ -31,6 +31,7 @@ The `--user` flag will install brilws binaries to `"${HOME}/.local/bin/"` and li
 > It's always a good idea to include the `--upgrade` flag.\
 > **If your brilcalc installation stops working, running the command below will fix it in 99% of cases.**
 {: .checklist}
+
 ```bash
 /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --upgrade brilws
 ```
