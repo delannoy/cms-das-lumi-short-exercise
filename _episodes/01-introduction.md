@@ -94,8 +94,8 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable))
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
 > * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
-> 
-> By how much would the expected event yield change if one considers the maximum and minimum values of integrated luminosity within its uncertainty?
+>
+> What is the minimum and maximum expected event yield given the uncertainty in integrated luminosity?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/9gg4eh5mmf81pfiagrp64c4ero).
 >
 > $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \left( \mathcal{L}_{int}^{2018} \pm \delta \right) \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$
