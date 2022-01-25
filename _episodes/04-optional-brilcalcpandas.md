@@ -19,7 +19,7 @@ keypoints:
 
 # brilcalcpandas
 
-`brilcalcpandas` is an unofficial [`pandas.DataFrame`](https://realpython.com/pandas-dataframe/) wrapper for `brilcalc` queries.
+[`brilcalcpandas`](https://gitlab.cern.ch/adelanno/brilcalcpandas) is an unofficial [`pandas.DataFrame`](https://realpython.com/pandas-dataframe/) wrapper for `brilcalc` queries.
 All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` options are supported as keyword arguments.
 
 > ## Setup
