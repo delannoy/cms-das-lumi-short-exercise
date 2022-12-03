@@ -95,7 +95,7 @@ The uncertainty in the integrated luminosity is often the dominant systematic un
 We can emphasize the impact of the integrated luminosity uncertainty by considering a relatively rare process:
 
 > ## 1.3 Total Higgs bosons decaying to muon pairs at CMS during 2018
-> * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable))
+> * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/LumiRecommendationsRun2))
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 > * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
