@@ -9,10 +9,10 @@ title: Setup
 > **This exercise is meant to be run from lxplus.cern.ch.**
 {: .callout}
 
-## Set up brilconda3 (centrally-installed Python3 virtual environment):
+<!--
+## Brilconda3 (centrally-installed Python3 virtual environment)
 Brilconda3 is a "centrally-installed" (available via [cvmfs](https://cvmfs.readthedocs.io/en/stable/)) Python3 [virtual environment](https://realpython.com/python-virtual-environments-a-primer/)
 
-<!--
 ```bash
 ssh lxplus
 [[ "${SHELL##*/}" != 'bash' ]] && bash # spawn a bash shell if not in a bash shell
