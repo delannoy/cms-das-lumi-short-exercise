@@ -11,6 +11,8 @@ title: Setup
 
 ## Set up brilconda3 (centrally-installed Python3 virtual environment):
 Brilconda3 is a "centrally-installed" (available via [cvmfs](https://cvmfs.readthedocs.io/en/stable/)) Python3 [virtual environment](https://realpython.com/python-virtual-environments-a-primer/)
+
+<!--
 ```bash
 ssh lxplus
 [[ "${SHELL##*/}" != 'bash' ]] && bash # spawn a bash shell if not in a bash shell
@@ -24,6 +26,8 @@ python3 --version
 Python 3.7.6
 ```
 {: .output}
+-->
+
 
 ## Install brilws
 The `--user` flag will install brilws binaries to `"${HOME}/.local/bin/"` and libraries to `"${HOME}/.local/lib/"`
