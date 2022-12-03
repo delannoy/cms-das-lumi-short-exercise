@@ -41,7 +41,7 @@ As an example, let's *very approximately* calculate the total Higgs Boson produc
 
 > ## 1.1 Total Higgs boson production rate at CMS
 > * During [May 2018](https://cmsoms.cern.ch/cms/fills/summary?cms_date_from=2018-05-01&cms_date_to=2018-05-31&cms_fill_stableOnly=true), the LHC routinely delivered instantanous luminosities of $$ \approx 2 \times 10^{34} \mathrm{cm^{-2} s^{-1}} $$ $$ \left( 0.02 \mathrm{pb^{-1} s^{-1}} \right) $$ at CMS
-> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > What is the rate of Higgs production at CMS?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/ug8kin56kpg17q7r3339fb8rua).
@@ -70,7 +70,7 @@ To illustrate, we can *very roughly* estimate the total number of Higgs bosons p
 
 > ## 1.2 Total Higgs bosons produced at CMS during 24 hours
 > * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
-> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > How many Higgs bosons can be produced at CMS during 24 hours?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/rtpm39u1bjrmbpi781d1xshqfe).
@@ -96,8 +96,8 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 
 > ## 1.3 Total Higgs bosons decaying to muon pairs at CMS during 2018
 > * During 2018, CMS recorded around $$ \approx 60 \mathrm{fb^{-1}} $$ of good-quality data with 2.5% uncertainty (see the [CMS Lumi POG "quick summary table"](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable))
-> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
-> * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2020 PDG](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-higgs-boson.pdf))
+> * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see Table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
+> * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > What is the minimum and maximum expected event yield given the uncertainty in integrated luminosity?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/9gg4eh5mmf81pfiagrp64c4ero).
