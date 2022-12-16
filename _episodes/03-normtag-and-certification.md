@@ -36,7 +36,7 @@ The Run 2 physics normtag is **`/cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/no
 **This is the only normtag which can be used for physics analyses.**
 It covers all of Run 2 for which there is a final approved number for physics (which includes all pp running and some special runs).
 
-> ## Query fill 6666 using the physics normtag
+> ## 3.1 Query fill 6666 using the physics normtag
 >
 > Using the physics normtag, what is the recorded luminosity in picobarns for fill 6666?
 > Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/d1woqdfiji8fbkyj56xrprhike).
@@ -53,7 +53,7 @@ Data certification is carried out by taking into account both the operational he
 The outcome of the certification process is regularly updated as more data gets collected, and for each new version of the data processing, by the [DQM-DataCertification](https://twiki.cern.ch/twiki/bin/view/CMS/DQM).
 One of the main deliverables of this process are JSON files listing runs and lumisection which are good for physics analysis.
 
-> ## Query processedLumis.json to determine the recorded luminosity for your crab job datset
+> ## 3.2 Query processedLumis.json to determine the recorded luminosity for your crab job datset
 >
 > Refer to your submitted crab job as part of the [third set of the Pre-Exercises](https://fnallpc.github.io/cms-das-pre-exercises/03-CMSDataAnalysisSchoolPreExerciseThirdSet/index.html).
 > Recall that you had to transfer the resulting `processedLumis.json` file to lxplus.
