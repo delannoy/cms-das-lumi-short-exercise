@@ -25,9 +25,7 @@ All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` opt
 > ## Setup
 > ```bash
 > ssh lxplus
-> /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m venv --system-site-packages 'brilconda3' && source 'brilconda3/bin/activate' # (optionally, create a python3 virtualenv with access to brilconda3 packages)
 > git clone ssh://git@gitlab.cern.ch:7999/adelanno/brilcalcpandas.git && cd brilcalcpandas/
-> [[ -n "${VIRTUAL_ENV}" ]] && python3 -m pip install --requirement requirements.txt || /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --requirement requirements.txt # [brilws installation](https://cms-service-lumi.web.cern.ch/cms-service-lumi/brilwsdoc.html#Installation-of-brilws)
 > ```
 > {: .source}
 {: .checklist}
@@ -89,6 +87,10 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 {: .solution}
 
 ### Interactive usage:
+
+```bash
+/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
+```
 
 ```python
 from brilcalcDF import Query
