@@ -34,7 +34,7 @@ All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` opt
 
 ### Main function:
 
-The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/TWikiLUM#SummaryTable)
+The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/LumiRecommendationsRun2)
 
 ```bash
 /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m brilcalcDF
