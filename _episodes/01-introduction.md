@@ -145,7 +145,8 @@ Hadronic Forward (HF)
 
 > ## Which detector is more photogenic?
 > This is the *most important* poll!
-> https://indico.cern.ch/event/1239959/surveys/4059
+>
+> [https://indico.cern.ch/event/1239959/surveys/4059](https://indico.cern.ch/event/1239959/surveys/4059)
 <!--
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/PLT/vote)
 > [![](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F)](https://api.gh-polls.com/poll/01FPDCW35SGWA9YWV70HN8G1Y4/BCM1F/vote)
