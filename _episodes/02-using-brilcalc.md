@@ -166,10 +166,11 @@ But the [official documentation](https://cmslumi.web.cern.ch/#brilcalc) is much 
 > ## 2.1 Query luminosity info for fill corresponding to run 325000
 > Using brilcalc, determine the fill that run 325000 corresponds to.
 > What is the total recorded luminosity for this fill in inverse picobarns?
-> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/gyi7as9ba7y7bbmtes5b3w3ssh).
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2024/pl/48g9gn44fjrezj1usexjx8817o).
 {: .challenge}
 <!--
 > > ## Solution
+/poll "2.1 What is the total recorded luminosity in picobarns for the fill that run 325000 corresponds to?" "380.6455 1/pb" "417.0736 1/pb" "420.3138 1/pb"
 > > Determine the fill number given a run number using overly-complicated `awk` syntax:
 > > ```bash
 > > fill="$(brilcalc lumi -r 325000 --output-style csv | awk 'BEGIN{FS="[,:]"}; /run:fill/{getline;print $2}')"
