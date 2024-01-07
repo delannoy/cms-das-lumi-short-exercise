@@ -37,7 +37,7 @@ All [currently-documented](https://cmslumi.web.cern.ch/#brilcalc) `brilcalc` opt
 The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table](https://twiki.cern.ch/twiki/bin/view/CMS/LumiRecommendationsRun2)
 
 ```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m brilcalcDF
+/cvmfs/cms-bril.cern.ch/brilconda310/bin/python3 -m brilcalcDF
 ```
 {: .source}
 
@@ -89,7 +89,7 @@ The `main` function reproduces delivered/recorded lumi in [LumiPOG Summary Table
 ### Interactive usage:
 
 ```bash
-/cvmfs/cms-bril.cern.ch/brilconda3/bin/python3
+/cvmfs/cms-bril.cern.ch/brilconda310/bin/python3
 ```
 
 ```python
