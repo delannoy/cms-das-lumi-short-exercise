@@ -44,11 +44,12 @@ As an example, let's *very approximately* calculate the total Higgs Boson produc
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > What is the rate of Higgs production at CMS?
-> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/ug8kin56kpg17q7r3339fb8rua).
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2024/pl/doo37wz5wpy3zyrxgpj1oq8tnw).
 >
 > $$ \frac{d\mathrm{N_{Higgs}}}{dt} = \mathcal{L}_{inst}^{\mathrm{peak}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$
 > 
 <!--
+/poll "1.1 What is the rate of Higgs production at CMS?" "100 Hz" "0.01 Hz" "1 Hz"
 > > ## Solution
 > > $$ \approx 0.02 \mathrm{pb^{-1} s^{-1}} \times 50 \mathrm{pb} \approx 1 \mathrm{Hz} $$
 > {: .solution}
@@ -69,15 +70,16 @@ Units of inverse femtobars $$ \mathrm{fb^{-1}} $$ are frequently used in CMS.
 To illustrate, we can *very roughly* estimate the total number of Higgs bosons produced during 24 hours at CMS:
 
 > ## 1.2 Total Higgs bosons produced at CMS during 24 hours
-> * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a 24-hour period of stable beams
+> * During [Nov 2017](https://cmsoms.cern.ch/cms/fills/report?cms_fill=6360), CMS recorded $$ \approx 600 \mathrm{pb^{-1}} $$ during a continuous 24-hour period of stable beams
 > * The total production cross section of Standard Model Higgs boson at $$ \sqrt{s} = 13 \mathrm{TeV} $$ can be slightly underestimated as $$ \approx 50 \mathrm{pb} $$ ([see table 11.2 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > How many Higgs bosons can be produced at CMS during 24 hours?
-> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/rtpm39u1bjrmbpi781d1xshqfe).
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2024/pl/mm6c5yi63pno8pntot5beo1nhr).
 >
 > $$ \mathrm{N_{Higgs}} = \mathcal{L}_{int}^{\mathrm{24hr}} \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} $$
 > 
 <!--
+/poll "1.2 How many Higgs bosons can be produced at CMS during 24 hours?" "30" "3000" "30000"
 > > ## Solution
 > > $$ \approx 600 \mathrm{pb^{-1}} \times 50 \mathrm{pb} \approx 30 \times 10^{3} $$
 > {: .solution}
@@ -100,7 +102,7 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 > * The branching ratio for $$ H \rightarrow \mu \mu $$ can be approximated as $$ \approx 2 \times 10^{-4} $$ ([see Table 11.3 in the 2022 PDG](https://pdg.lbl.gov/2022/reviews/rpp2022-rev-higgs-boson.pdf))
 >
 > What is the minimum and maximum expected event yield given the uncertainty in integrated luminosity?
-> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2022/pl/9gg4eh5mmf81pfiagrp64c4ero).
+> Vote for the corect answer in the [short lumi exercise Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2024/pl/o1ibf3za83rb3ntb6xdzzsbszr).
 >
 > $$ \mathrm{N}_{H \rightarrow \mu \mu}^{2018} = \left( \mathcal{L}_{int}^{2018} \pm \delta \right) \cdot \sigma_{\mathrm{Higgs}}^{\mathrm{total}} \cdot \mathcal{B}_{H \rightarrow \mu \mu} $$
 > 
@@ -112,6 +114,7 @@ We can emphasize the impact of the integrated luminosity uncertainty by consider
 >
 -->
 <!--
+/poll "1.3 Given the luminosity uncertainty, what are the upper and lower bounds of Higgs -> dimuon produced at CMS during 2018?" "[292.5, 307.5]" "[297.5, 302.5]" "[299.875, 300.125]" "[615, 585]" "[625, 575]"
 > > ## Solution
 > > $$ \leq \left( 60 + \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 615 $$\
 > > $$ \geq \left( 60 - \frac{2.5}{100} \cdot 60 \right) \cdot 10^{3} \mathrm{pb^{-1}} \cdot 50 \mathrm{pb} \cdot 2 \times 10^{-4} = 585 $$
